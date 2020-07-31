@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+$section-h1:30px;
+$section-h2:20px;
 
 
-html, body, #root, .App {
+html, body, #root, .App,.home-page {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-  }
+    scrollbar-width: none;
+  
   p{
       padding: 0;
       margin: 0;
@@ -14,11 +19,7 @@ html, body, #root, .App {
 .home-page{
     display: flex;
     flex-direction: column;
-    height: 100%;
-
-    margin-top: 0px;
-    margin-left: 30px;
-    margin-right:30px ;
+    height: inherit;
     border:solid 1px;
     background-color: #FDFDFD;
 
@@ -28,7 +29,6 @@ html, body, #root, .App {
         background-position: center;
         width: 100%;
         min-height: 400px;
-       
         max-height: 600px;
     }
 
@@ -40,34 +40,158 @@ html, body, #root, .App {
         margin-left: 60px;
         margin-right: 60px;
 
-        .latest-works-title{
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-            #chapter{
-                font-size: 20px;
+        .project-content{
+            display: flex;
+            flex-direction: column;
+            .latest-works-title{
+                font-family: 'Oswald', sans-serif;
+                
+                text-align: center;
+                #chapter{
+                    font-size: $section-h1;
+                    
+                }
+                #chapter-content{
+                    font-size: $section-h2;
+                }
             }
-            #chapter-content{
-                font-size: 10px;
+
+            .latest-works-content{
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-content: flex-start;
+                flex-wrap: wrap;
+                height: 100%;
+    
+                .card-container{
+                    position: relative;
+                    margin: 30px;
+                    .card{
+                        display: flex;
+                        flex-direction: column;
+                        height: 250px;
+                        width:  150px;
+                        border-radius: 10px;
+                        min-width: 200px;
+               
+                        background-color: #526274;
+                        box-shadow: -2px 3px 5px rgb(155, 155, 155);
+                       
+                        .image-box{
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            z-index: 1000;
+                            width: 100%;
+                            top:35%;
+                            transition: 0.5s;
+                            transform: translateY(-50%);
+                            
+                            
+                            #chordify{
+                                
+                                width: 80%;
+                                height: 100px;
+                            }
+                        }
+                        
+                        &:hover .image-box{
+                            top:10%;
+                            transform:translateY(0%)
+                        }
+
+                       
+                        .content-box{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: end;
+                            font-family: 'Lobster', cursive;
+                            color:white;
+                            bottom: 0;
+                            width: 100%;
+                            height:100%;
+                            text-align: center;
+                            transition: 0.5s;
+                            transform: translateY(-1%);
+                            
+                            p{
+                                margin-bottom:10px ;
+                            }
+                            .button-group{
+                                margin-bottom:12px ;
+                            }
+                            .but{
+                                width: 80%;
+                                border: none;
+                            }
+                        }
+
+                        &:hover .content-box{
+                            height: 240px;
+                            transition:0.5s;
+
+                        }
+                        
+                    }
+                }
             }
         }
-        .latest-works-content{
-            display: flex;
-            justify-content: center;
-            align-content: flex-start;
-            flex-wrap: wrap;
-            height: inherit;
 
-            .card{
-                height: 200px;
-                min-height: 200px;
-                min-width: 200px;
-                margin: 30px;
-                box-shadow: -2px 3px 5px black;
-                .image-box{
+        .toolkit-content{
+            display:flex;
+            flex-direction: column;
+            .toolkit-title{
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+                .toolkit-container{
+
+                    #toolkit-h1{
+                        font-size: $section-h1;
+                    }
+                    #toolkit-h2{
+                        font-size: $section-h2;
+                    }
+                }
+            }
+            .toolkit-works{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 70px;
+                    padding-right: 70px;
+                .toolkit-container{
+                    
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    background-color: #ebe4e4;
+                    border-radius: 10px;
+                    box-shadow: -1px 3px 5px rgb(155, 155, 155);
+
+                    section{
+                        
+                        padding: 20px;
+
+                        p{
+                            font-family: 'Oswald', sans-serif, bold;
+                            text-align: center;
+                            font-size: 25px;
+                        }
+                        ul{
+                            font-family: 'Oswald', sans-serif;
+                            list-style: none;
+                            font-size: 15px;
+                            left:0;
+                        }
+                    }
 
                 }
             }
         }
+        
+
     }
 
+}
 }
