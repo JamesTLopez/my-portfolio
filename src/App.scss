@@ -22,14 +22,22 @@ html, body, #root, .App,.home-page {
     height: inherit;
     border:solid 1px;
     background-color: #FDFDFD;
+    position: absolute;
 
     .title{
         background-image: url('./images/titl.jpg');
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        min-height: 400px;
-        max-height: 600px;
+        min-height: 100%;
+   
+        header{
+            color:white;
+            background-color: black;
+            opacity: 0.8;
+            
+           
+        }
     }
 
     .content{
@@ -37,15 +45,14 @@ html, body, #root, .App,.home-page {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        margin-left: 60px;
-        margin-right: 60px;
-
+       
+        position: relative;
+       
         .project-content{
             display: flex;
             flex-direction: column;
             .latest-works-title{
                 font-family: 'Oswald', sans-serif;
-                
                 text-align: center;
                 #chapter{
                     font-size: $section-h1;
@@ -62,6 +69,7 @@ html, body, #root, .App,.home-page {
                 justify-content: center;
                 align-content: flex-start;
                 flex-wrap: wrap;
+                margin: 10px;
                 height: 100%;
     
                 .card-container{
@@ -70,44 +78,56 @@ html, body, #root, .App,.home-page {
                     .card{
                         display: flex;
                         flex-direction: column;
+                        position: relative;
                         height: 250px;
                         width:  150px;
                         border-radius: 10px;
+                        top:0px;
                         min-width: 200px;
-               
-                        background-color: #526274;
+                        transition: all 0.5s;
+                        background-color: #ece4e4;
                         box-shadow: -2px 3px 5px rgb(155, 155, 155);
-                       
+                
                         .image-box{
                             display: flex;
                             justify-content: center;
                             position: absolute;
                             z-index: 1000;
                             width: 100%;
-                            top:35%;
+                            top:45%;
                             transition: 0.5s;
-                            transform: translateY(-50%);
-                            
-                            
+                            transform: translateY(-70%);
+
                             #chordify{
-                                
-                                width: 80%;
+                                height: 90px;
+                                width: 180px;
+                                margin-bottom: 5px;
+                                transition:0.5s ease;
+                                filter:brightness(130%);
+                            }
+
+                            #lyricly{
                                 height: 100px;
+                                width: 100px;
+                                margin-bottom: 5px;
+                                transition:0.5s ease;
+                                filter:brightness(110%);
+                            }
+                            #onlinewhite{
+                                height: 90px;
+                                width: 170px;
+                                margin-bottom: 5px;
+                                transition:0.5s ease;
+                                filter:brightness(130%);
                             }
                         }
                         
-                        &:hover .image-box{
-                            top:10%;
-                            transform:translateY(0%)
-                        }
-
-                       
                         .content-box{
                             display: flex;
                             flex-direction: column;
                             justify-content: end;
                             font-family: 'Lobster', cursive;
-                            color:white;
+                            top:0;
                             bottom: 0;
                             width: 100%;
                             height:100%;
@@ -115,32 +135,166 @@ html, body, #root, .App,.home-page {
                             transition: 0.5s;
                             transform: translateY(-1%);
                             
+                            
                             p{
-                                margin-bottom:10px ;
+                                position: relative;
+                                top:50px;
+                                font-size: 35px;
+                                transition: ease 0.5s;
+                                margin-bottom:5px ;
+                                
+                            }
+
+                            .button-group{
+                                position: relative;
+                                top:30px;
+                                margin-bottom:12px ;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition:  0.2s ease-out;
+                            }
+                            button{
+                                width: 70%;
+                                height: 20px;
+                                margin: 2px;
+                                border: none;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                line-height: 12px;
+                                transition:0.5s;
+                            }
+                        }
+
+                        &:hover{
+                            top:-20px;
+                            width:  235px;
+                            height: 280px;
+                            p{
+                                top:-5px;
+                                font-size: 40px;
+                            }
+                            
+                            
+                            .image-box{
+                                top:10%;
+                                transform:translateY(0%)
                             }
                             .button-group{
-                                margin-bottom:12px ;
+                                top:0px;
+                                opacity: 1;
+                                visibility: visible;
+                                transition-delay: 0.1s;
                             }
-                            .but{
-                                width: 80%;
-                                border: none;
-                            }
-                        }
-
-                        &:hover .content-box{
-                            height: 240px;
-                            transition:0.5s;
-
+                            
+                            
                         }
                         
+
                     }
+                    .hov1:hover{
+                        background-color:#677788;
+                        color:#242e38;
+                        button{
+                            width: 70%;
+                            height: 20px;
+                            margin: 2px;
+                            border: none;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            line-height: 12px;
+                            background-color: #7e92a8;
+               
+                            background-image: linear-gradient(to right,#6b7f94 50%,transparent 50%);
+                            background-position: 100% 0%;
+                            background-size: 200% 100%;
+                            transition:0.5s;
+                        }
+
+                        & button:hover{
+                            color:white;
+                            background-position: 0% 50%;
+                            cursor: pointer;
+                        }
+                        #chordify{
+                            height: 100px;
+                            width: 200px;
+                            filter:brightness(180%);
+                        }
+                    }
+                    .hov2:hover{
+                        background-color:#0d0f11;
+                        color:#11b911;
+                        button{
+                            width: 70%;
+                            height: 20px;
+                            margin: 2px;
+                            border: none;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            line-height: 12px;
+                            background-color: #11b911;
+                     
+                            background-image: linear-gradient(to right,#068806 50%,transparent 50%);
+                            background-position: 100% 0%;
+                            background-size: 200% 100%;
+                            transition:0.5s;
+                        }
+
+                        & button:hover{
+                            color:white;
+                            background-position: 0% 50%;
+                            cursor: pointer;
+                        }
+                        #lyricly{
+                            height: 120px;
+                            width: 120px;
+                            filter:brightness(180%);
+                            filter:contrast((120%))
+                        }
+                    }
+                    .hov3:hover{
+                        background-color:#489ffc;
+                        color: #fdfcfc;
+                        button{
+                            width: 70%;
+                            height: 20px;
+                            margin: 2px;
+                            border: none;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            line-height: 12px;
+                            background-color: #ece4e4;
+                            background-image: linear-gradient(to right,#8f8d8d 50%,transparent 50%);
+                            background-position: 100% 0%;
+                            background-size: 200% 100%;
+                            transition:0.5s;
+                        }
+                        & button:hover{
+                            color:white;
+                            background-position: 0% 50%;
+                            cursor: pointer;
+                        }
+                        #onlinewhite{
+                            height: 100px;
+                            width: 200px;
+                            filter:contrast(150%)
+                        }
+                    }
+               
                 }
             }
         }
 
+        // TOOLKIT SASS CONTENT
         .toolkit-content{
             display:flex;
             flex-direction: column;
+            padding: 20px;
+            
             .toolkit-title{
                 font-family: 'Oswald', sans-serif;
                 text-align: center;
@@ -162,29 +316,76 @@ html, body, #root, .App,.home-page {
                 .toolkit-container{
                     
                     display: flex;
+               
                     justify-content: center;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    background-color: #ebe4e4;
+                    background-color: #9c9c9c;
                     border-radius: 10px;
+                    padding: 50px;
                     box-shadow: -1px 3px 5px rgb(155, 155, 155);
 
-                    section{
-                        
-                        padding: 20px;
-
-                        p{
-                            font-family: 'Oswald', sans-serif, bold;
-                            text-align: center;
-                            font-size: 25px;
-                        }
-                        ul{
-                            font-family: 'Oswald', sans-serif;
-                            list-style: none;
-                            font-size: 15px;
-                            left:0;
-                        }
+                    #toolkit-images{
+                        height: 90px;
+                        width: 100px;
                     }
+
+                  
+                        
+                        section{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            position: relative;
+                            height: 250px;
+                            width: 200px;
+                            background-color: #838383;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 350px 110%;
+    
+                            
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            margin-left: 20px;
+                            padding:20px;
+                            border-radius: 5px;
+                            box-shadow: -1px 1px 2px #2b3138;
+
+                            
+                            .image-box{
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                              
+                                
+                            }
+                            .content-box{
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                top:15px;
+
+                                p{
+                                    font-family: 'Oswald', sans-serif, bold;
+                                    text-align: center;
+                                    font-size: 25px;
+                                }
+                                #list{
+                                    width: 100%;
+                                    font-family: 'Oswald', sans-serif;
+                                    text-align: center;
+                                    position: relative;
+                                    font-size: 15px;
+                                  
+                                    
+                                }
+    
+                            }
+                        }
+                       
+
+                    
 
                 }
             }

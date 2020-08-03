@@ -23,6 +23,7 @@ html .home-page, body .home-page, #root .home-page, .App .home-page, .home-page 
   height: inherit;
   border: solid 1px;
   background-color: #FDFDFD;
+  position: absolute;
 }
 
 html .home-page .title, body .home-page .title, #root .home-page .title, .App .home-page .title, .home-page .home-page .title {
@@ -30,8 +31,13 @@ html .home-page .title, body .home-page .title, #root .home-page .title, .App .h
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  min-height: 400px;
-  max-height: 600px;
+  min-height: 100%;
+}
+
+html .home-page .title header, body .home-page .title header, #root .home-page .title header, .App .home-page .title header, .home-page .home-page .title header {
+  color: white;
+  background-color: black;
+  opacity: 0.8;
 }
 
 html .home-page .content, body .home-page .content, #root .home-page .content, .App .home-page .content, .home-page .home-page .content {
@@ -46,8 +52,7 @@ html .home-page .content, body .home-page .content, #root .home-page .content, .
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
+  position: relative;
 }
 
 html .home-page .content .project-content, body .home-page .content .project-content, #root .home-page .content .project-content, .App .home-page .content .project-content, .home-page .home-page .content .project-content {
@@ -85,6 +90,7 @@ html .home-page .content .project-content .latest-works-content, body .home-page
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 10px;
   height: 100%;
 }
 
@@ -101,11 +107,15 @@ html .home-page .content .project-content .latest-works-content .card-container 
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   height: 250px;
   width: 150px;
   border-radius: 10px;
+  top: 0px;
   min-width: 200px;
-  background-color: #526274;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ece4e4;
   -webkit-box-shadow: -2px 3px 5px #9b9b9b;
           box-shadow: -2px 3px 5px #9b9b9b;
 }
@@ -120,22 +130,41 @@ html .home-page .content .project-content .latest-works-content .card-container 
   position: absolute;
   z-index: 1000;
   width: 100%;
-  top: 35%;
+  top: 45%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
 }
 
 html .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, body .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, #root .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, .App .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, .home-page .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify {
-  width: 80%;
-  height: 100px;
+  height: 90px;
+  width: 180px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
 }
 
-html .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, body .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, #root .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, .App .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box {
-  top: 10%;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+html .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, body .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, #root .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, .App .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, .home-page .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, body .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, #root .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, .App .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, .home-page .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite {
+  height: 90px;
+  width: 170px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
 }
 
 html .home-page .content .project-content .latest-works-content .card-container .card .content-box, body .home-page .content .project-content .latest-works-content .card-container .card .content-box, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box {
@@ -150,7 +179,7 @@ html .home-page .content .project-content .latest-works-content .card-container 
       -ms-flex-pack: end;
           justify-content: end;
   font-family: 'Lobster', cursive;
-  color: white;
+  top: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -162,22 +191,170 @@ html .home-page .content .project-content .latest-works-content .card-container 
 }
 
 html .home-page .content .project-content .latest-works-content .card-container .card .content-box p, body .home-page .content .project-content .latest-works-content .card-container .card .content-box p, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box p, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box p, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box p {
-  margin-bottom: 10px;
+  position: relative;
+  top: 50px;
+  font-size: 35px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  margin-bottom: 5px;
 }
 
 html .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, body .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group {
+  position: relative;
+  top: 30px;
   margin-bottom: 12px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
-html .home-page .content .project-content .latest-works-content .card-container .card .content-box .but, body .home-page .content .project-content .latest-works-content .card-container .card .content-box .but, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box .but, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box .but, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box .but {
-  width: 80%;
+html .home-page .content .project-content .latest-works-content .card-container .card .content-box button, body .home-page .content .project-content .latest-works-content .card-container .card .content-box button, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box button, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box button, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
   border: none;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card:hover .content-box, body .home-page .content .project-content .latest-works-content .card-container .card:hover .content-box, #root .home-page .content .project-content .latest-works-content .card-container .card:hover .content-box, .App .home-page .content .project-content .latest-works-content .card-container .card:hover .content-box, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover .content-box {
-  height: 240px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .card:hover, body .home-page .content .project-content .latest-works-content .card-container .card:hover, #root .home-page .content .project-content .latest-works-content .card-container .card:hover, .App .home-page .content .project-content .latest-works-content .card-container .card:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover {
+  top: -20px;
+  width: 235px;
+  height: 280px;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .card:hover p, body .home-page .content .project-content .latest-works-content .card-container .card:hover p, #root .home-page .content .project-content .latest-works-content .card-container .card:hover p, .App .home-page .content .project-content .latest-works-content .card-container .card:hover p, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover p {
+  top: -5px;
+  font-size: 40px;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, body .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, #root .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, .App .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box {
+  top: 10%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, body .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, #root .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, .App .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group {
+  top: 0px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov1:hover, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover {
+  background-color: #677788;
+  color: #242e38;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  background-color: #7e92a8;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #6b7f94), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, #6b7f94 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover {
+  color: white;
+  background-position: 0% 50%;
+  cursor: pointer;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify {
+  height: 100px;
+  width: 200px;
+  -webkit-filter: brightness(180%);
+          filter: brightness(180%);
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov2:hover, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover {
+  background-color: #0d0f11;
+  color: #11b911;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  background-color: #11b911;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #068806), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, #068806 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover {
+  color: white;
+  background-position: 0% 50%;
+  cursor: pointer;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly {
+  height: 120px;
+  width: 120px;
+  -webkit-filter: brightness(180%);
+          filter: brightness(180%);
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov3:hover, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover {
+  background-color: #489ffc;
+  color: #fdfcfc;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  background-color: #ece4e4;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #8f8d8d), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, #8f8d8d 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover {
+  color: white;
+  background-position: 0% 50%;
+  cursor: pointer;
+}
+
+html .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite {
+  height: 100px;
+  width: 200px;
+  -webkit-filter: contrast(150%);
+          filter: contrast(150%);
 }
 
 html .home-page .content .toolkit-content, body .home-page .content .toolkit-content, #root .home-page .content .toolkit-content, .App .home-page .content .toolkit-content, .home-page .home-page .content .toolkit-content {
@@ -188,6 +365,7 @@ html .home-page .content .toolkit-content, body .home-page .content .toolkit-con
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20px;
 }
 
 html .home-page .content .toolkit-content .toolkit-title, body .home-page .content .toolkit-content .toolkit-title, #root .home-page .content .toolkit-content .toolkit-title, .App .home-page .content .toolkit-content .toolkit-title, .home-page .home-page .content .toolkit-content .toolkit-title {
@@ -223,26 +401,78 @@ html .home-page .content .toolkit-content .toolkit-works .toolkit-container, bod
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #ebe4e4;
+  background-color: #9c9c9c;
   border-radius: 10px;
+  padding: 50px;
   -webkit-box-shadow: -1px 3px 5px #9b9b9b;
           box-shadow: -1px 3px 5px #9b9b9b;
 }
 
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section {
-  padding: 20px;
+html .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, body .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images {
+  height: 90px;
+  width: 100px;
 }
 
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section p, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section p, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section p, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section p, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section p {
+html .home-page .content .toolkit-content .toolkit-works .toolkit-container section, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 250px;
+  width: 200px;
+  background-color: #838383;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 350px 110%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 1px 2px #2b3138;
+          box-shadow: -1px 1px 2px #2b3138;
+}
+
+html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 15px;
+}
+
+html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p {
   font-family: 'Oswald', sans-serif, bold;
   text-align: center;
   font-size: 25px;
 }
 
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section ul, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section ul, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section ul, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section ul, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section ul {
+html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list {
+  width: 100%;
   font-family: 'Oswald', sans-serif;
-  list-style: none;
+  text-align: center;
+  position: relative;
   font-size: 15px;
-  left: 0;
 }
 /*# sourceMappingURL=App.css.map */
