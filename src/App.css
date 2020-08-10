@@ -365,7 +365,6 @@ html .home-page .content .toolkit-content, body .home-page .content .toolkit-con
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px;
 }
 
 html .home-page .content .toolkit-content .toolkit-title, body .home-page .content .toolkit-content .toolkit-title, #root .home-page .content .toolkit-content .toolkit-title, .App .home-page .content .toolkit-content .toolkit-title, .home-page .home-page .content .toolkit-content .toolkit-title {
@@ -373,47 +372,58 @@ html .home-page .content .toolkit-content .toolkit-title, body .home-page .conte
   text-align: center;
 }
 
-html .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h1, body .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h1, #root .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h1, .App .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h1, .home-page .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h1 {
+html .home-page .content .toolkit-content .toolkit-title #chapter, body .home-page .content .toolkit-content .toolkit-title #chapter, #root .home-page .content .toolkit-content .toolkit-title #chapter, .App .home-page .content .toolkit-content .toolkit-title #chapter, .home-page .home-page .content .toolkit-content .toolkit-title #chapter {
   font-size: 30px;
 }
 
-html .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h2, body .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h2, #root .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h2, .App .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h2, .home-page .home-page .content .toolkit-content .toolkit-title .toolkit-container #toolkit-h2 {
+html .home-page .content .toolkit-content .toolkit-title #chapter-content, body .home-page .content .toolkit-content .toolkit-title #chapter-content, #root .home-page .content .toolkit-content .toolkit-title #chapter-content, .App .home-page .content .toolkit-content .toolkit-title #chapter-content, .home-page .home-page .content .toolkit-content .toolkit-title #chapter-content {
   font-size: 20px;
 }
 
-html .home-page .content .toolkit-content .toolkit-works, body .home-page .content .toolkit-content .toolkit-works, #root .home-page .content .toolkit-content .toolkit-works, .App .home-page .content .toolkit-content .toolkit-works, .home-page .home-page .content .toolkit-content .toolkit-works {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container, body .home-page .content .toolkit-content .toolkit-works .toolkit-container, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container {
+html .home-page .content .toolkit-content .current-toolkit-content, body .home-page .content .toolkit-content .current-toolkit-content, #root .home-page .content .toolkit-content .current-toolkit-content, .App .home-page .content .toolkit-content .current-toolkit-content, .home-page .home-page .content .toolkit-content .current-toolkit-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 40px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #9c9c9c;
-  border-radius: 10px;
-  padding: 50px;
-  -webkit-box-shadow: -1px 3px 5px #9b9b9b;
-          box-shadow: -1px 3px 5px #9b9b9b;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, body .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container #toolkit-images {
-  height: 90px;
-  width: 100px;
-}
-
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section {
+html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,58 +431,44 @@ html .home-page .content .toolkit-content .toolkit-works .toolkit-container sect
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
   height: 250px;
-  width: 200px;
-  background-color: #838383;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 350px 110%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  -webkit-box-shadow: -1px 1px 2px #2b3138;
-          box-shadow: -1px 1px 2px #2b3138;
+  width: 150px;
+  border-radius: 10px;
+  top: 0px;
+  margin: 20px;
+  min-width: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ece4e4;
+  -webkit-box-shadow: -2px 3px 5px #9b9b9b;
+          box-shadow: -2px 3px 5px #9b9b9b;
 }
 
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .image-box {
+html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  z-index: 1000;
   width: 100%;
+  top: 45%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
 }
 
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  top: 15px;
-}
-
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box p {
-  font-family: 'Oswald', sans-serif, bold;
-  text-align: center;
-  font-size: 25px;
-}
-
-html .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, body .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, #root .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, .App .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list, .home-page .home-page .content .toolkit-content .toolkit-works .toolkit-container section .content-box #list {
-  width: 100%;
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-  position: relative;
-  font-size: 15px;
+html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend {
+  height: 90px;
+  width: 110px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
 }
 /*# sourceMappingURL=App.css.map */

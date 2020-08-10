@@ -1,17 +1,17 @@
 import React from 'react'
 
 import Chordify from '../../images/chordify.png'
-import Frontend from '../../images/frontendLarge.png'
 import Lyricly from '../../images/lyricly.png'
 import OnlineWhite from '../../images/online.png'
+import Frontend from '../../images/frontendLarge.png'
 import Server from '../../images/server.png'
+import Webtech from '../../images/webtech.png'
 
 const Home = () => {
     return (
         <div className="home-page">
             <section className="title">
                 <header></header>
-                
             </section>
                 <section className="content">
                     <div className="project-content">
@@ -37,8 +37,8 @@ const Home = () => {
                             </div>
                             <div className="card-container">
                                 <div className="card hov2">
-                                <div className="image-box">
-                                        <img id="lyricly" src={Lyricly} alt="lyricly" />
+                                    <div className="image-box">
+                                            <img id="lyricly" src={Lyricly} alt="lyricly" />
                                     </div>
                                     <div className="content-box">
                                         <p>Lyricly</p>
@@ -64,65 +64,56 @@ const Home = () => {
                                             <section><button className="but3">Source Code</button></section>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="toolkit-content">
-                            <div className="toolkit-title">
-                                <div className="toolkit-container">
-                                    <p id="toolkit-h1">Toolkit</p>
-                                    <p id="toolkit-h2">Technical Skills</p>
+                        <div className="toolkit-title">
+                            <p id="chapter">Toolkit</p>
+                            <p id="chapter-content">Technologies</p>
+                        </div>
+                        <div className="current-toolkit-content">
+                            <div className="toolkit-content">
+                                <div className="card-container">
+                                    <div className="card">
+                                        <div className="image-box">
+                                            <img id="Frontend" src={Frontend} alt="chordify" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card-container">
+                                    <div className="card">
+                                        <div className="image-box">
+                                            <img id="Frontend" src={Frontend} alt="chordify" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card-container">
+                                    <div className="card">
+                                        <div className="image-box">
+                                            <img id="Frontend" src={Frontend} alt="chordify" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="toolkit-works">
-                                <div className="toolkit-container">
-                                    <section >
-                                        <div className="image-box">
-                                            <img id="toolkit-images" src={Frontend} alt="Frontend"/>
-                                        </div>
-                                        <div className="content-box">
-                                            <p>Frontend</p>
-                                            <div id="list">
-                                                Javascript<br/>
-                                                Typescript<br/>
-                                                HTML5<br/>
-                                                CSS or SASS<br/>
-                                            </div>
-                                        </div>
-                                    </section>
-
-       
-                                    <section>
-                                        <div className="image-box">
-                                            <img id="toolkit-images" src={Server} alt="Frontend"/>
-                                        </div>
-                                        <div className="content-box">
-                                            <p>Libraries/Frameworks</p>
-                                            <div id="list">
-                                                React<br/>
-                                                Bootstrap<br/>
-                                                Node<br/>
-                                                <br/>
-                                            </div>
-                                        </div>
-                                      
-                                    </section>
-                                    <section>
-                                        <p> Web Design tools</p>
-                                        <ul>
-                                            <li>Affinity Designer</li>
-                                            <li>Affinity Photo</li>
-                                            <li>Adobe XD</li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </div>
+                        </div>
                     </div>
                 </section>
         </div>
     )
 }
 
+                                        // <div className="image-box">
+                                        //     <img id="toolkit-images" src={Webtech} alt="Frontend"/>
+                                        // </div>
+                                        // <div className="content-box">
+                                        //     <p> Web Design tools</p>
+                                        //     <div id="list">
+                                        //         Affinity Designer<br/>
+                                        //         Affinity Photo<br/>
+                                        //         Adobe XD<br/>
+                                        //         <br/>
+                                        //     </div>
+                                        // </div>
 export default Home
