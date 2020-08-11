@@ -1,0 +1,263 @@
+.card-container {
+  position: relative;
+  margin: 30px;
+}
+
+.card-container .hov1:hover {
+  background-color: #677788;
+  color: #242e38;
+}
+
+.card-container .hov1:hover button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  background-color: #7e92a8;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #6b7f94), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, #6b7f94 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-container .hov1:hover button:hover {
+  color: white;
+  background-position: 0% 50%;
+  cursor: pointer;
+}
+
+.card-container .hov1:hover #chordify {
+  height: 100px;
+  width: 200px;
+  -webkit-filter: brightness(180%);
+          filter: brightness(180%);
+}
+
+.card-container .hov2:hover {
+  background-color: #0d0f11;
+  color: #11b911;
+}
+
+.card-container .hov2:hover button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  background-color: #11b911;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #068806), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, #068806 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-container .hov2:hover button:hover {
+  color: white;
+  background-position: 0% 50%;
+  cursor: pointer;
+}
+
+.card-container .hov2:hover #lyricly {
+  height: 120px;
+  width: 120px;
+  -webkit-filter: brightness(180%);
+          filter: brightness(180%);
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+}
+
+.card-container .hov3:hover {
+  background-color: #489ffc;
+  color: #fdfcfc;
+}
+
+.card-container .hov3:hover button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  background-color: #ece4e4;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #8f8d8d), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, #8f8d8d 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-container .hov3:hover button:hover {
+  color: white;
+  background-position: 0% 50%;
+  cursor: pointer;
+}
+
+.card-container .hov3:hover #onlinewhite {
+  height: 100px;
+  width: 200px;
+  -webkit-filter: contrast(150%);
+          filter: contrast(150%);
+}
+
+.card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 250px;
+  width: 150px;
+  border-radius: 10px;
+  top: 0px;
+  min-width: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ece4e4;
+  -webkit-box-shadow: -2px 3px 5px #9b9b9b;
+          box-shadow: -2px 3px 5px #9b9b9b;
+}
+
+.card-container .card .image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  top: 45%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+
+.card-container .card .image-box #chordify {
+  height: 90px;
+  width: 180px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}
+
+.card-container .card .image-box #lyricly {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.card-container .card .image-box #onlinewhite {
+  height: 90px;
+  width: 170px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}
+
+.card-container .card .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-family: "Lobster", cursive;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+}
+
+.card-container .card .content-box p {
+  position: relative;
+  top: 50px;
+  font-size: 35px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  margin-bottom: 5px;
+}
+
+.card-container .card .content-box .button-group {
+  position: relative;
+  top: 30px;
+  margin-bottom: 12px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.card-container .card .content-box button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-container .card:hover {
+  top: -20px;
+  width: 235px;
+  height: 280px;
+}
+
+.card-container .card:hover p {
+  top: -5px;
+  font-size: 40px;
+}
+
+.card-container .card:hover .image-box {
+  top: 10%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.card-container .card:hover .button-group {
+  top: 0px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+/*# sourceMappingURL=card.css.map */

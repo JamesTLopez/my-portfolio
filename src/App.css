@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-html, body, #root, .App, .home-page {
+html,
+body,
+#root,
+.App,
+.home-page {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   scrollbar-width: none;
 }
 
-html p, body p, #root p, .App p, .home-page p {
+html p,
+body p,
+#root p,
+.App p,
+.home-page p {
   padding: 0;
   margin: 0;
 }
 
-html .home-page, body .home-page, #root .home-page, .App .home-page, .home-page .home-page {
+html .home-page,
+body .home-page,
+#root .home-page,
+.App .home-page,
+.home-page .home-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,11 +34,15 @@ html .home-page, body .home-page, #root .home-page, .App .home-page, .home-page 
           flex-direction: column;
   height: inherit;
   border: solid 1px;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   position: absolute;
 }
 
-html .home-page .title, body .home-page .title, #root .home-page .title, .App .home-page .title, .home-page .home-page .title {
+html .home-page .title,
+body .home-page .title,
+#root .home-page .title,
+.App .home-page .title,
+.home-page .home-page .title {
   background-image: url("./images/titl.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -34,13 +50,21 @@ html .home-page .title, body .home-page .title, #root .home-page .title, .App .h
   min-height: 100%;
 }
 
-html .home-page .title header, body .home-page .title header, #root .home-page .title header, .App .home-page .title header, .home-page .home-page .title header {
+html .home-page .title header,
+body .home-page .title header,
+#root .home-page .title header,
+.App .home-page .title header,
+.home-page .home-page .title header {
   color: white;
   background-color: black;
   opacity: 0.8;
 }
 
-html .home-page .content, body .home-page .content, #root .home-page .content, .App .home-page .content, .home-page .home-page .content {
+html .home-page .content,
+body .home-page .content,
+#root .home-page .content,
+.App .home-page .content,
+.home-page .home-page .content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -55,7 +79,11 @@ html .home-page .content, body .home-page .content, #root .home-page .content, .
   position: relative;
 }
 
-html .home-page .content .project-content, body .home-page .content .project-content, #root .home-page .content .project-content, .App .home-page .content .project-content, .home-page .home-page .content .project-content {
+html .home-page .content .project-content,
+body .home-page .content .project-content,
+#root .home-page .content .project-content,
+.App .home-page .content .project-content,
+.home-page .home-page .content .project-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,22 +91,39 @@ html .home-page .content .project-content, body .home-page .content .project-con
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
-html .home-page .content .project-content .latest-works-title, body .home-page .content .project-content .latest-works-title, #root .home-page .content .project-content .latest-works-title, .App .home-page .content .project-content .latest-works-title, .home-page .home-page .content .project-content .latest-works-title {
-  font-family: 'Oswald', sans-serif;
+html .home-page .content .project-content .latest-works-title,
+body .home-page .content .project-content .latest-works-title,
+#root .home-page .content .project-content .latest-works-title,
+.App .home-page .content .project-content .latest-works-title,
+.home-page .home-page .content .project-content .latest-works-title {
+  font-family: "Oswald", sans-serif;
   text-align: center;
 }
 
-html .home-page .content .project-content .latest-works-title #chapter, body .home-page .content .project-content .latest-works-title #chapter, #root .home-page .content .project-content .latest-works-title #chapter, .App .home-page .content .project-content .latest-works-title #chapter, .home-page .home-page .content .project-content .latest-works-title #chapter {
+html .home-page .content .project-content .latest-works-title #chapter,
+body .home-page .content .project-content .latest-works-title #chapter,
+#root .home-page .content .project-content .latest-works-title #chapter,
+.App .home-page .content .project-content .latest-works-title #chapter,
+.home-page .home-page .content .project-content .latest-works-title #chapter {
   font-size: 30px;
 }
 
-html .home-page .content .project-content .latest-works-title #chapter-content, body .home-page .content .project-content .latest-works-title #chapter-content, #root .home-page .content .project-content .latest-works-title #chapter-content, .App .home-page .content .project-content .latest-works-title #chapter-content, .home-page .home-page .content .project-content .latest-works-title #chapter-content {
+html .home-page .content .project-content .latest-works-title #chapter-content,
+body .home-page .content .project-content .latest-works-title #chapter-content,
+#root .home-page .content .project-content .latest-works-title #chapter-content,
+.App .home-page .content .project-content .latest-works-title #chapter-content,
+.home-page .home-page .content .project-content .latest-works-title #chapter-content {
   font-size: 20px;
 }
 
-html .home-page .content .project-content .latest-works-content, body .home-page .content .project-content .latest-works-content, #root .home-page .content .project-content .latest-works-content, .App .home-page .content .project-content .latest-works-content, .home-page .home-page .content .project-content .latest-works-content {
+html .home-page .content .project-content .latest-works-content,
+body .home-page .content .project-content .latest-works-content,
+#root .home-page .content .project-content .latest-works-content,
+.App .home-page .content .project-content .latest-works-content,
+.home-page .home-page .content .project-content .latest-works-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,12 +139,21 @@ html .home-page .content .project-content .latest-works-content, body .home-page
   height: 100%;
 }
 
-html .home-page .content .project-content .latest-works-content .card-container, body .home-page .content .project-content .latest-works-content .card-container, #root .home-page .content .project-content .latest-works-content .card-container, .App .home-page .content .project-content .latest-works-content .card-container, .home-page .home-page .content .project-content .latest-works-content .card-container {
-  position: relative;
-  margin: 30px;
+html .home-page .content .toolkit-content,
+body .home-page .content .toolkit-content,
+#root .home-page .content .toolkit-content,
+.App .home-page .content .toolkit-content,
+.home-page .home-page .content .toolkit-content {
+  height: 100%;
+  width: 100%;
 }
 
-html .home-page .content .project-content .latest-works-content .card-container .card, body .home-page .content .project-content .latest-works-content .card-container .card, #root .home-page .content .project-content .latest-works-content .card-container .card, .App .home-page .content .project-content .latest-works-content .card-container .card, .home-page .home-page .content .project-content .latest-works-content .card-container .card {
+html .home-page .content .toolkit-content .toolkit-container,
+body .home-page .content .toolkit-content .toolkit-container,
+#root .home-page .content .toolkit-content .toolkit-container,
+.App .home-page .content .toolkit-content .toolkit-container,
+.home-page .home-page .content .toolkit-content .toolkit-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,368 +161,60 @@ html .home-page .content .project-content .latest-works-content .card-container 
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  height: 250px;
-  width: 150px;
-  border-radius: 10px;
-  top: 0px;
-  min-width: 200px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  background-color: #ece4e4;
-  -webkit-box-shadow: -2px 3px 5px #9b9b9b;
-          box-shadow: -2px 3px 5px #9b9b9b;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card .image-box, body .home-page .content .project-content .latest-works-content .card-container .card .image-box, #root .home-page .content .project-content .latest-works-content .card-container .card .image-box, .App .home-page .content .project-content .latest-works-content .card-container .card .image-box, .home-page .home-page .content .project-content .latest-works-content .card-container .card .image-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  top: 45%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: translateY(-70%);
-          transform: translateY(-70%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-html .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, body .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, #root .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, .App .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify, .home-page .home-page .content .project-content .latest-works-content .card-container .card .image-box #chordify {
-  height: 90px;
-  width: 180px;
-  margin-bottom: 5px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-filter: brightness(130%);
-          filter: brightness(130%);
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, body .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, #root .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, .App .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly, .home-page .home-page .content .project-content .latest-works-content .card-container .card .image-box #lyricly {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 5px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-filter: brightness(110%);
-          filter: brightness(110%);
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, body .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, #root .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, .App .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite, .home-page .home-page .content .project-content .latest-works-content .card-container .card .image-box #onlinewhite {
-  height: 90px;
-  width: 170px;
-  margin-bottom: 5px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-filter: brightness(130%);
-          filter: brightness(130%);
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card .content-box, body .home-page .content .project-content .latest-works-content .card-container .card .content-box, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  font-family: 'Lobster', cursive;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: translateY(-1%);
-          transform: translateY(-1%);
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card .content-box p, body .home-page .content .project-content .latest-works-content .card-container .card .content-box p, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box p, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box p, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box p {
-  position: relative;
-  top: 50px;
-  font-size: 35px;
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
-  margin-bottom: 5px;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, body .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box .button-group {
-  position: relative;
-  top: 30px;
-  margin-bottom: 12px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card .content-box button, body .home-page .content .project-content .latest-works-content .card-container .card .content-box button, #root .home-page .content .project-content .latest-works-content .card-container .card .content-box button, .App .home-page .content .project-content .latest-works-content .card-container .card .content-box button, .home-page .home-page .content .project-content .latest-works-content .card-container .card .content-box button {
-  width: 70%;
-  height: 20px;
-  margin: 2px;
-  border: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 12px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card:hover, body .home-page .content .project-content .latest-works-content .card-container .card:hover, #root .home-page .content .project-content .latest-works-content .card-container .card:hover, .App .home-page .content .project-content .latest-works-content .card-container .card:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover {
-  top: -20px;
-  width: 235px;
-  height: 280px;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card:hover p, body .home-page .content .project-content .latest-works-content .card-container .card:hover p, #root .home-page .content .project-content .latest-works-content .card-container .card:hover p, .App .home-page .content .project-content .latest-works-content .card-container .card:hover p, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover p {
-  top: -5px;
-  font-size: 40px;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, body .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, #root .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, .App .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover .image-box {
-  top: 10%;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, body .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, #root .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, .App .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group, .home-page .home-page .content .project-content .latest-works-content .card-container .card:hover .button-group {
-  top: 0px;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov1:hover, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover {
-  background-color: #677788;
-  color: #242e38;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover button, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover button {
-  width: 70%;
-  height: 20px;
-  margin: 2px;
-  border: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 12px;
-  background-color: #7e92a8;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #6b7f94), color-stop(50%, transparent));
-  background-image: linear-gradient(to right, #6b7f94 50%, transparent 50%);
-  background-position: 100% 0%;
-  background-size: 200% 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover button:hover {
-  color: white;
-  background-position: 0% 50%;
-  cursor: pointer;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, body .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, #root .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, .App .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify, .home-page .home-page .content .project-content .latest-works-content .card-container .hov1:hover #chordify {
-  height: 100px;
-  width: 200px;
-  -webkit-filter: brightness(180%);
-          filter: brightness(180%);
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov2:hover, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover {
-  background-color: #0d0f11;
-  color: #11b911;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover button, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover button {
-  width: 70%;
-  height: 20px;
-  margin: 2px;
-  border: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 12px;
-  background-color: #11b911;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #068806), color-stop(50%, transparent));
-  background-image: linear-gradient(to right, #068806 50%, transparent 50%);
-  background-position: 100% 0%;
-  background-size: 200% 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover button:hover {
-  color: white;
-  background-position: 0% 50%;
-  cursor: pointer;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, body .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, #root .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, .App .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly, .home-page .home-page .content .project-content .latest-works-content .card-container .hov2:hover #lyricly {
-  height: 120px;
-  width: 120px;
-  -webkit-filter: brightness(180%);
-          filter: brightness(180%);
-  -webkit-filter: contrast(120%);
-          filter: contrast(120%);
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov3:hover, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover {
-  background-color: #489ffc;
-  color: #fdfcfc;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover button, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover button {
-  width: 70%;
-  height: 20px;
-  margin: 2px;
-  border: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 12px;
-  background-color: #ece4e4;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #8f8d8d), color-stop(50%, transparent));
-  background-image: linear-gradient(to right, #8f8d8d 50%, transparent 50%);
-  background-position: 100% 0%;
-  background-size: 200% 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover button:hover {
-  color: white;
-  background-position: 0% 50%;
-  cursor: pointer;
-}
-
-html .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, body .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, #root .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, .App .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite, .home-page .home-page .content .project-content .latest-works-content .card-container .hov3:hover #onlinewhite {
-  height: 100px;
-  width: 200px;
-  -webkit-filter: contrast(150%);
-          filter: contrast(150%);
-}
-
-html .home-page .content .toolkit-content, body .home-page .content .toolkit-content, #root .home-page .content .toolkit-content, .App .home-page .content .toolkit-content, .home-page .home-page .content .toolkit-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-html .home-page .content .toolkit-content .toolkit-title, body .home-page .content .toolkit-content .toolkit-title, #root .home-page .content .toolkit-content .toolkit-title, .App .home-page .content .toolkit-content .toolkit-title, .home-page .home-page .content .toolkit-content .toolkit-title {
-  font-family: 'Oswald', sans-serif;
+html .home-page .content .toolkit-content .toolkit-container .toolkit-title,
+body .home-page .content .toolkit-content .toolkit-container .toolkit-title,
+#root .home-page .content .toolkit-content .toolkit-container .toolkit-title,
+.App .home-page .content .toolkit-content .toolkit-container .toolkit-title,
+.home-page .home-page .content .toolkit-content .toolkit-container .toolkit-title {
+  font-family: "Oswald", sans-serif;
   text-align: center;
 }
 
-html .home-page .content .toolkit-content .toolkit-title #chapter, body .home-page .content .toolkit-content .toolkit-title #chapter, #root .home-page .content .toolkit-content .toolkit-title #chapter, .App .home-page .content .toolkit-content .toolkit-title #chapter, .home-page .home-page .content .toolkit-content .toolkit-title #chapter {
+html .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter,
+body .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter,
+#root .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter,
+.App .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter,
+.home-page .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter {
   font-size: 30px;
 }
 
-html .home-page .content .toolkit-content .toolkit-title #chapter-content, body .home-page .content .toolkit-content .toolkit-title #chapter-content, #root .home-page .content .toolkit-content .toolkit-title #chapter-content, .App .home-page .content .toolkit-content .toolkit-title #chapter-content, .home-page .home-page .content .toolkit-content .toolkit-title #chapter-content {
+html .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content,
+body .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content,
+#root .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content,
+.App .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content,
+.home-page .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content {
   font-size: 20px;
 }
 
-html .home-page .content .toolkit-content .current-toolkit-content, body .home-page .content .toolkit-content .current-toolkit-content, #root .home-page .content .toolkit-content .current-toolkit-content, .App .home-page .content .toolkit-content .current-toolkit-content, .home-page .home-page .content .toolkit-content .current-toolkit-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  height: 100%;
-  margin: 40px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-color: grey;
+html .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
+body .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
+#root .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
+.App .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
+.home-page .home-page .content .toolkit-content .toolkit-container .toolkit-cards {
+  margin-top: 50px;
+  height: 400px;
+  width: 80%;
   border-radius: 10px;
-}
-
-html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-
-html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  height: 250px;
-  width: 150px;
-  border-radius: 10px;
-  top: 0px;
-  margin: 20px;
-  min-width: 200px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   background-color: #ece4e4;
   -webkit-box-shadow: -2px 3px 5px #9b9b9b;
           box-shadow: -2px 3px 5px #9b9b9b;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
-html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  top: 45%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: translateY(-70%);
-          transform: translateY(-70%);
-}
-
-html .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, body .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, #root .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, .App .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend, .home-page .home-page .content .toolkit-content .current-toolkit-content .toolkit-content .card-container .card .image-box #Frontend {
-  height: 90px;
-  width: 110px;
-  margin-bottom: 5px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-filter: brightness(130%);
-          filter: brightness(130%);
+html .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
+body .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
+#root .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
+.App .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
+.home-page .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover {
+  background-color: #c5c3c3;
 }
 /*# sourceMappingURL=App.css.map */
