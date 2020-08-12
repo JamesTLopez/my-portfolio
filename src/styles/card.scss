@@ -77,8 +77,8 @@
             text-transform: uppercase;
             text-decoration: none;
             line-height: 12px;
-            background-color: #ece4e4;
-            background-image: linear-gradient(to right, #8f8d8d 50%, transparent 50%);
+            background-color: #ffffff;
+            background-image: linear-gradient(to right, #64acfa 50%, transparent 50%);
             background-position: 100% 0%;
             background-size: 200% 100%;
             transition: 0.5s;
@@ -99,8 +99,8 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        height: 250px;
-        width: 150px;
+        height: 350px;
+        width: 250px;
         border-radius: 10px;
         top: 0px;
         min-width: 200px;
@@ -127,8 +127,9 @@
             }
 
             #lyricly {
-                height: 100px;
-                width: 100px;
+                
+                height: 140px;
+                width: 140px;
                 margin-bottom: 5px;
                 transition: 0.5s ease;
                 filter: brightness(110%);
@@ -145,7 +146,7 @@
         .content-box {
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content:flex-end;
             font-family: "Lobster", cursive;
             top: 0;
             bottom: 0;
@@ -153,12 +154,12 @@
             height: 100%;
             text-align: center;
             transition: 0.5s;
-            transform: translateY(-1%);
+            transform: translateY(-10%);
 
             p {
                 position: relative;
-                top: 50px;
-                font-size: 35px;
+                top: 65px;
+                font-size: 45px;
                 transition: ease 0.5s;
                 margin-bottom: 5px;
             }
@@ -173,7 +174,7 @@
             }
             button {
                 width: 70%;
-                height: 20px;
+                height: 25px;
                 margin: 2px;
                 border: none;
                 font-size: 12px;
@@ -186,16 +187,35 @@
 
         &:hover {
             top: -20px;
-            width: 235px;
-            height: 280px;
+            width: 335px;
+            height: 380px;
             p {
-                top: -5px;
-                font-size: 40px;
+                top: -20px;
+                font-size: 50px;
             }
 
             .image-box {
-                top: 10%;
+                top: 7%;
                 transform: translateY(0%);
+                #chordify {
+                    height: 110px;
+                    width: 210px;
+                    
+                }
+    
+                #lyricly {
+                    top:-100px;
+                    height: 150px;
+                    width: 150px;
+
+               
+                }
+                #onlinewhite {
+                    height: 120px;
+                    width: 200px;
+               
+               
+                }
             }
             .button-group {
                 top: 0px;

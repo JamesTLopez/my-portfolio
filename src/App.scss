@@ -24,7 +24,7 @@ body,
         flex-direction: column;
         height: inherit;
         border: solid 1px;
-        background-color: #fdfdfd;
+        background-color: #f8f8f8;
         position: absolute;
 
         .title {
@@ -32,12 +32,46 @@ body,
             background-repeat: no-repeat;
             background-position: center;
             width: 100%;
-            min-height: 100%;
+            min-height: 50%;
 
             header {
+                display: flex;
                 color: white;
-                background-color: black;
-                opacity: 0.8;
+
+                .Name {
+                    flex: 2;
+                    position: relative;
+                    left: 100px;
+                    align-self: center;
+                    font-size: 20px;
+                    opacity: 0.7;
+                  
+                }
+                .navigation {
+                    flex: 1;
+                    nav {
+                        float: right;
+                    }
+                    ul {
+                        list-style: none;
+                        margin-right: 50px;
+                    }
+                    li {
+                        display: inline;
+                        #Link {
+                            font-size: 20px;
+                            text-decoration: none;
+                            color:white;
+                            padding: 10px;
+                            opacity: 0.7;
+                            transition: all 0.5s;
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+
+                    }
+                }
             }
         }
 
@@ -45,14 +79,20 @@ body,
             flex: 1;
             display: flex;
             flex-direction: column;
-            margin-top: 20px;
             position: relative;
 
             .project-content {
                 display: flex;
-
                 flex-direction: column;
                 width: 100%;
+
+                .project-header {
+                    height: 80px;
+                    width: 100%;
+                    margin-bottom: 50px;
+                    background-color: #fcfdfd;
+                    box-shadow: 0px 10px 99px #a8a8a8;
+                }
 
                 .latest-works-title {
                     font-family: "Oswald", sans-serif;
@@ -77,7 +117,7 @@ body,
             }
             .toolkit-content {
                 height: 100%;
- 
+
                 width: 100%;
                 .toolkit-container {
                     width: 100%;
