@@ -1,35 +1,48 @@
 import React from "react";
-import {Link} from "react-router-dom"
+
+
 //Components
 import ProjectCard from "../layout/ProjectCard";
 import ToolkitCard from "../layout/ToolkitCard";
+import Navbar from "../layout/Navbar"
 
 //Images
 import Chordify from "../../images/chordify.png";
 import Lyricly from "../../images/lyricly.png";
 import OnlineWhite from "../../images/online.png";
-import Frontend from "../../images/frontendLarge.png";
-import Server from "../../images/server.png";
-import Webtech from "../../images/webtech.png";
+import Cat from "../../images/Gitcat.png"
+import Email from "../../images/email.png"
+import Resume from "../../images/resume.png"
+// import Frontend from "../../images/frontendLarge.png";
+// import Server from "../../images/server.png";
+// import Webtech from "../../images/webtech.png";
 
 const Home = () => {
   return (
     <div className="home-page">
       <section className="title">
-        <header>
-          <div className="Name">
-            <p>James Lopez</p>
-          </div>
-          <div className="navigation">
-            <nav>
-              <ul>
-                <li><Link id="Link" path="/">Home</Link></li>
-                <li><Link id="Link" path="/about">About</Link></li>
-                <li><Link id="Link" path="/contact">Contact</Link></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+       <Navbar/>
+       <main>
+         <div className="title-content">
+            <div className="portolio-title">
+              <p><span id="position">Frontend Developer</span></p>
+              <p><span id='location'>{`( Windsor-Canada === World-Wide )`}</span></p>
+            </div>
+            <div className="Links">
+              <div className="images">
+                <img id="Cat" src={Cat} alt="Github"/>
+              </div>
+              <div className="images">
+              <img id="Email" src={Email} alt="Email"/>
+              </div>
+              <div className="images">
+                <img id="Resume" src={Resume} alt="Resume"/>
+              </div>
+
+           
+            </div>
+         </div>
+       </main>
       </section>
       <section className="content">
         <div className="project-content">
@@ -66,24 +79,7 @@ const Home = () => {
               <p id="chapter-content">Technologies</p>
             </div>
             <div class="toolkit-cards">
-              <ToolkitCard
-                name="Frontend"
-                image={Frontend}
-                id="frontend"
-                hov="hov1"
-              />
-              <ToolkitCard
-                name="Server"
-                image={Server}
-                id="server"
-                hov="hov2"
-              />
-              <ToolkitCard
-                name="Webtech"
-                image={Webtech}
-                id="webtech"
-                hov="hov3"
-              />
+   
             </div>
           </div>
         </div>

@@ -129,9 +129,9 @@
   min-width: 200px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  background-color: #ece4e4;
-  -webkit-box-shadow: -2px 3px 5px #9b9b9b;
-          box-shadow: -2px 3px 5px #9b9b9b;
+  background-color: #313742;
+  -webkit-box-shadow: -2px 3px 5px #161616;
+          box-shadow: -2px 3px 5px #161616;
 }
 
 .card-container .card .image-box {
@@ -162,6 +162,8 @@
 }
 
 .card-container .card .image-box #lyricly {
+  position: relative;
+  top: 0px;
   height: 140px;
   width: 140px;
   margin-bottom: 5px;
@@ -192,7 +194,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-family: "Lobster", cursive;
+  font-family: "Oswald", sans-serif;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -205,6 +207,7 @@
 }
 
 .card-container .card .content-box p {
+  color: white;
   position: relative;
   top: 65px;
   font-size: 45px;
@@ -259,7 +262,8 @@
 }
 
 .card-container .card:hover .image-box #lyricly {
-  top: -100px;
+  position: relative;
+  top: -10px;
   height: 150px;
   width: 150px;
 }

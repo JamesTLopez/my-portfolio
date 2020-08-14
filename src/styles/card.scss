@@ -15,7 +15,7 @@
             text-decoration: none;
             line-height: 12px;
             background-color: #7e92a8;
-
+          
             background-image: linear-gradient(to right, #6b7f94 50%, transparent 50%);
             background-position: 100% 0%;
             background-size: 200% 100%;
@@ -105,8 +105,8 @@
         top: 0px;
         min-width: 200px;
         transition: all 0.5s;
-        background-color: #ece4e4;
-        box-shadow: -2px 3px 5px rgb(155, 155, 155);
+        background-color: #313742;
+        box-shadow: -2px 3px 5px #161616;
 
         .image-box {
             display: flex;
@@ -127,7 +127,8 @@
             }
 
             #lyricly {
-                
+                position: relative;
+                top:0px;
                 height: 140px;
                 width: 140px;
                 margin-bottom: 5px;
@@ -147,7 +148,7 @@
             display: flex;
             flex-direction: column;
             justify-content:flex-end;
-            font-family: "Lobster", cursive;
+            font-family: "Oswald", sans-serif;
             top: 0;
             bottom: 0;
             width: 100%;
@@ -157,6 +158,7 @@
             transform: translateY(-10%);
 
             p {
+                color:white;
                 position: relative;
                 top: 65px;
                 font-size: 45px;
@@ -204,10 +206,10 @@
                 }
     
                 #lyricly {
-                    top:-100px;
+                    position: relative;
+                    top:-10px;
                     height: 150px;
                     width: 150px;
-
                
                 }
                 #onlinewhite {

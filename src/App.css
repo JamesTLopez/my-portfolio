@@ -34,7 +34,7 @@ body .home-page,
           flex-direction: column;
   height: inherit;
   border: solid 1px;
-  background-color: #f8f8f8;
+  background-color: #2d323d;
   position: absolute;
 }
 
@@ -43,96 +43,131 @@ body .home-page .title,
 #root .home-page .title,
 .App .home-page .title,
 .home-page .home-page .title {
-  background-image: url("./images/titl.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  min-height: 50%;
-}
-
-html .home-page .title header,
-body .home-page .title header,
-#root .home-page .title header,
-.App .home-page .title header,
-.home-page .home-page .title header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./images/titl.jpg");
+  -webkit-filter: contrast(120%) sepia(10%);
+          filter: contrast(120%) sepia(10%);
+  background-size: inherit;
+  background-repeat: inherit;
+  background-position: center;
+  width: 100%;
+  min-height: 65%;
 }
 
-html .home-page .title header .Name,
-body .home-page .title header .Name,
-#root .home-page .title header .Name,
-.App .home-page .title header .Name,
-.home-page .home-page .title header .Name {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+html .home-page .title main,
+body .home-page .title main,
+#root .home-page .title main,
+.App .home-page .title main,
+.home-page .home-page .title main {
+  font-family: "Oswald", sans-serif;
   position: relative;
-  left: 100px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 20px;
-  opacity: 0.7;
+  top: -8%;
+  height: 100%;
+  width: 80%;
 }
 
-html .home-page .title header .navigation,
-body .home-page .title header .navigation,
-#root .home-page .title header .navigation,
-.App .home-page .title header .navigation,
-.home-page .home-page .title header .navigation {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+html .home-page .title main .title-content,
+body .home-page .title main .title-content,
+#root .home-page .title main .title-content,
+.App .home-page .title main .title-content,
+.home-page .home-page .title main .title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-html .home-page .title header .navigation nav,
-body .home-page .title header .navigation nav,
-#root .home-page .title header .navigation nav,
-.App .home-page .title header .navigation nav,
-.home-page .home-page .title header .navigation nav {
-  float: right;
-}
-
-html .home-page .title header .navigation ul,
-body .home-page .title header .navigation ul,
-#root .home-page .title header .navigation ul,
-.App .home-page .title header .navigation ul,
-.home-page .home-page .title header .navigation ul {
-  list-style: none;
-  margin-right: 50px;
-}
-
-html .home-page .title header .navigation li,
-body .home-page .title header .navigation li,
-#root .home-page .title header .navigation li,
-.App .home-page .title header .navigation li,
-.home-page .home-page .title header .navigation li {
-  display: inline;
-}
-
-html .home-page .title header .navigation li #Link,
-body .home-page .title header .navigation li #Link,
-#root .home-page .title header .navigation li #Link,
-.App .home-page .title header .navigation li #Link,
-.home-page .home-page .title header .navigation li #Link {
-  font-size: 20px;
-  text-decoration: none;
+html .home-page .title main .title-content .portolio-title p,
+body .home-page .title main .title-content .portolio-title p,
+#root .home-page .title main .title-content .portolio-title p,
+.App .home-page .title main .title-content .portolio-title p,
+.home-page .home-page .title main .title-content .portolio-title p {
   color: white;
-  padding: 10px;
-  opacity: 0.7;
+}
+
+html .home-page .title main .title-content .portolio-title p #position,
+body .home-page .title main .title-content .portolio-title p #position,
+#root .home-page .title main .title-content .portolio-title p #position,
+.App .home-page .title main .title-content .portolio-title p #position,
+.home-page .home-page .title main .title-content .portolio-title p #position {
+  font-size: 40px;
+  color: white;
+}
+
+html .home-page .title main .title-content .portolio-title p #location,
+body .home-page .title main .title-content .portolio-title p #location,
+#root .home-page .title main .title-content .portolio-title p #location,
+.App .home-page .title main .title-content .portolio-title p #location,
+.home-page .home-page .title main .title-content .portolio-title p #location {
+  opacity: 0.6;
+}
+
+html .home-page .title main .title-content .Links,
+body .home-page .title main .title-content .Links,
+#root .home-page .title main .title-content .Links,
+.App .home-page .title main .title-content .Links,
+.home-page .home-page .title main .title-content .Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  top: 30px;
+  height: 50px;
+}
+
+html .home-page .title main .title-content .Links .images,
+body .home-page .title main .title-content .Links .images,
+#root .home-page .title main .title-content .Links .images,
+.App .home-page .title main .title-content .Links .images,
+.home-page .home-page .title main .title-content .Links .images {
+  height: 100px;
+  width: 60px;
+}
+
+html .home-page .title main .title-content .Links .images img,
+body .home-page .title main .title-content .Links .images img,
+#root .home-page .title main .title-content .Links .images img,
+.App .home-page .title main .title-content .Links .images img,
+.home-page .home-page .title main .title-content .Links .images img {
+  padding: 5px;
+  height: 30px;
+  width: 30px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-html .home-page .title header .navigation li #Link:hover,
-body .home-page .title header .navigation li #Link:hover,
-#root .home-page .title header .navigation li #Link:hover,
-.App .home-page .title header .navigation li #Link:hover,
-.home-page .home-page .title header .navigation li #Link:hover {
-  opacity: 1;
+html .home-page .title main .title-content .Links .images img:hover,
+body .home-page .title main .title-content .Links .images img:hover,
+#root .home-page .title main .title-content .Links .images img:hover,
+.App .home-page .title main .title-content .Links .images img:hover,
+.home-page .home-page .title main .title-content .Links .images img:hover {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
 }
 
 html .home-page .content,
@@ -161,6 +196,7 @@ body .home-page .content .project-content,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 600px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -173,12 +209,12 @@ body .home-page .content .project-content .project-header,
 #root .home-page .content .project-content .project-header,
 .App .home-page .content .project-content .project-header,
 .home-page .home-page .content .project-content .project-header {
-  height: 80px;
+  height: 10px;
   width: 100%;
   margin-bottom: 50px;
-  background-color: #fcfdfd;
-  -webkit-box-shadow: 0px 10px 99px #a8a8a8;
-          box-shadow: 0px 10px 99px #a8a8a8;
+  background-color: #2d313a;
+  -webkit-box-shadow: 0px 10px 99px #121418;
+          box-shadow: 0px 10px 99px #121418;
 }
 
 html .home-page .content .project-content .latest-works-title,
@@ -195,6 +231,7 @@ body .home-page .content .project-content .latest-works-title #chapter,
 #root .home-page .content .project-content .latest-works-title #chapter,
 .App .home-page .content .project-content .latest-works-title #chapter,
 .home-page .home-page .content .project-content .latest-works-title #chapter {
+  color: #eeeded;
   font-size: 30px;
 }
 
@@ -203,6 +240,8 @@ body .home-page .content .project-content .latest-works-title #chapter-content,
 #root .home-page .content .project-content .latest-works-title #chapter-content,
 .App .home-page .content .project-content .latest-works-title #chapter-content,
 .home-page .home-page .content .project-content .latest-works-title #chapter-content {
+  color: #eeeded;
+  opacity: 0.7;
   font-size: 20px;
 }
 
@@ -223,7 +262,9 @@ body .home-page .content .project-content .latest-works-content,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 10px;
-  height: 100%;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
 }
 
 html .home-page .content .toolkit-content,
@@ -270,6 +311,7 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-title #cha
 #root .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter,
 .App .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter,
 .home-page .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter {
+  color: #eeeded;
   font-size: 30px;
 }
 
@@ -278,6 +320,8 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-title #cha
 #root .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content,
 .App .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content,
 .home-page .home-page .content .toolkit-content .toolkit-container .toolkit-title #chapter-content {
+  color: #eeeded;
+  opacity: 0.7;
   font-size: 20px;
 }
 
@@ -289,7 +333,7 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
   margin-top: 50px;
   height: 400px;
   width: 80%;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ece4e4;
   -webkit-box-shadow: -2px 3px 5px #9b9b9b;
           box-shadow: -2px 3px 5px #9b9b9b;

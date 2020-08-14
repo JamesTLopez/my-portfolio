@@ -1,0 +1,68 @@
+.navbar-container {
+  width: 80%;
+  z-index: 10000;
+}
+
+.navbar-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar-container header .Name {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 30px;
+}
+
+.navbar-container header .Name p span #first {
+  opacity: 1;
+}
+
+.navbar-container header .Name p span #last {
+  opacity: 0.7;
+}
+
+.navbar-container header .navigation {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navbar-container header .navigation nav {
+  float: right;
+}
+
+.navbar-container header .navigation ul {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.navbar-container header .navigation li {
+  display: inline;
+}
+
+.navbar-container header .navigation li #Link {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  opacity: 0.7;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-container header .navigation li #Link:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=navbar.css.map */

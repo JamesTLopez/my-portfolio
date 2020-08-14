@@ -24,52 +24,72 @@ body,
         flex-direction: column;
         height: inherit;
         border: solid 1px;
-        background-color: #f8f8f8;
+        background-color: #2d323d;
         position: absolute;
 
         .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             background-image: url("./images/titl.jpg");
-            background-repeat: no-repeat;
+            filter: contrast(120%) sepia(10%);
+            background-size: inherit;
+            background-repeat: inherit;
             background-position: center;
             width: 100%;
-            min-height: 50%;
+            min-height: 65%;
+            main {
+                font-family: "Oswald", sans-serif;
+                position: relative;
+                top: -8%;
+                height: 100%;
+                width: 80%;
+                .title-content {
+                    display: flex;
 
-            header {
-                display: flex;
-                color: white;
-
-                .Name {
-                    flex: 2;
-                    position: relative;
-                    left: 100px;
-                    align-self: center;
-                    font-size: 20px;
-                    opacity: 0.7;
-                  
-                }
-                .navigation {
-                    flex: 1;
-                    nav {
-                        float: right;
-                    }
-                    ul {
-                        list-style: none;
-                        margin-right: 50px;
-                    }
-                    li {
-                        display: inline;
-                        #Link {
-                            font-size: 20px;
-                            text-decoration: none;
-                            color:white;
-                            padding: 10px;
-                            opacity: 0.7;
-                            transition: all 0.5s;
-                            &:hover{
-                                opacity: 1;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    .portolio-title {
+                        p {
+                            color: white;
+                            #position {
+                                font-size: 40px;
+                                color: white;
+                            }
+                            #location {
+                                opacity: 0.6;
                             }
                         }
+                    }
 
+                    .Links {
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        top:30px;
+               
+                        height: 50px;
+                       
+
+                        .images {
+                            height: 100px;
+                            width: 60px;
+                            img {
+                                padding: 5px;
+                                height: 30px;
+                                width: 30px;
+                                transition: all 0.5s;
+                                &:hover {
+                                    height: 35px;
+                                    width: 35px;
+                                    
+                                    cursor: pointer;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -83,24 +103,28 @@ body,
 
             .project-content {
                 display: flex;
+                height: 600px;
                 flex-direction: column;
                 width: 100%;
 
                 .project-header {
-                    height: 80px;
+                    height: 10px;
                     width: 100%;
                     margin-bottom: 50px;
-                    background-color: #fcfdfd;
-                    box-shadow: 0px 10px 99px #a8a8a8;
+                    background-color: #2d313a;
+                    box-shadow: 0px 10px 99px #121418;
                 }
 
                 .latest-works-title {
                     font-family: "Oswald", sans-serif;
                     text-align: center;
                     #chapter {
+                        color: #eeeded;
                         font-size: $section-h1;
                     }
                     #chapter-content {
+                        color: #eeeded;
+                        opacity: 0.7;
                         font-size: $section-h2;
                     }
                 }
@@ -112,7 +136,9 @@ body,
                     align-content: flex-start;
                     flex-wrap: wrap;
                     margin: 10px;
-                    height: 100%;
+                    width: 100%;
+                    height: 400px;
+                    max-height: 400px;
                 }
             }
             .toolkit-content {
@@ -129,9 +155,12 @@ body,
                         font-family: "Oswald", sans-serif;
                         text-align: center;
                         #chapter {
+                            color: #eeeded;
                             font-size: $section-h1;
                         }
                         #chapter-content {
+                            color: #eeeded;
+                            opacity: 0.7;
                             font-size: $section-h2;
                         }
                     }
@@ -139,7 +168,7 @@ body,
                         margin-top: 50px;
                         height: 400px;
                         width: 80%;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         background-color: #ece4e4;
                         box-shadow: -2px 3px 5px rgb(155, 155, 155);
                         transition: ease 0.5s;
