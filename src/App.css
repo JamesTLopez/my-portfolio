@@ -130,12 +130,21 @@ body .home-page .title main .title-content .Links,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   top: 30px;
+  width: 20%;
   height: 50px;
 }
 
@@ -145,7 +154,6 @@ body .home-page .title main .title-content .Links .images,
 .App .home-page .title main .title-content .Links .images,
 .home-page .home-page .title main .title-content .Links .images {
   height: 100px;
-  width: 60px;
 }
 
 html .home-page .title main .title-content .Links .images img,
@@ -209,12 +217,126 @@ body .home-page .content .project-content .project-header,
 #root .home-page .content .project-content .project-header,
 .App .home-page .content .project-content .project-header,
 .home-page .home-page .content .project-content .project-header {
-  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
   width: 100%;
   margin-bottom: 50px;
   background-color: #2d313a;
   -webkit-box-shadow: 0px 10px 99px #121418;
           box-shadow: 0px 10px 99px #121418;
+}
+
+html .home-page .content .project-content .project-header .images,
+body .home-page .content .project-content .project-header .images,
+#root .home-page .content .project-content .project-header .images,
+.App .home-page .content .project-content .project-header .images,
+.home-page .home-page .content .project-content .project-header .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  height: 60px;
+  width: 90px;
+}
+
+html .home-page .content .project-content .project-header .images img,
+body .home-page .content .project-content .project-header .images img,
+#root .home-page .content .project-content .project-header .images img,
+.App .home-page .content .project-content .project-header .images img,
+.home-page .home-page .content .project-content .project-header .images img {
+  height: 50px;
+  width: 50px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+html .home-page .content .project-content .project-header .images img:hover,
+body .home-page .content .project-content .project-header .images img:hover,
+#root .home-page .content .project-content .project-header .images img:hover,
+.App .home-page .content .project-content .project-header .images img:hover,
+.home-page .home-page .content .project-content .project-header .images img:hover {
+  height: 55px;
+  width: 55px;
+  -webkit-filter: brightness(120%) contrast(120%);
+          filter: brightness(120%) contrast(120%);
+}
+
+html .home-page .content .project-content .project-header .images #javascript,
+body .home-page .content .project-content .project-header .images #javascript,
+#root .home-page .content .project-content .project-header .images #javascript,
+.App .home-page .content .project-content .project-header .images #javascript,
+.home-page .home-page .content .project-content .project-header .images #javascript {
+  position: relative;
+  top: 3px;
+  height: 45px;
+  width: 45px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+html .home-page .content .project-content .project-header .images #javascript:hover,
+body .home-page .content .project-content .project-header .images #javascript:hover,
+#root .home-page .content .project-content .project-header .images #javascript:hover,
+.App .home-page .content .project-content .project-header .images #javascript:hover,
+.home-page .home-page .content .project-content .project-header .images #javascript:hover {
+  height: 50px;
+  width: 50px;
+}
+
+html .home-page .content .project-content .project-header .images #react,
+body .home-page .content .project-content .project-header .images #react,
+#root .home-page .content .project-content .project-header .images #react,
+.App .home-page .content .project-content .project-header .images #react,
+.home-page .home-page .content .project-content .project-header .images #react {
+  position: relative;
+  top: 3px;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+html .home-page .content .project-content .project-header .images #react:hover,
+body .home-page .content .project-content .project-header .images #react:hover,
+#root .home-page .content .project-content .project-header .images #react:hover,
+.App .home-page .content .project-content .project-header .images #react:hover,
+.home-page .home-page .content .project-content .project-header .images #react:hover {
+  height: 55px;
+  width: 55px;
+  -webkit-animation: spin 6s linear infinite;
+          animation: spin 6s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 html .home-page .content .project-content .latest-works-title,
@@ -274,6 +396,8 @@ body .home-page .content .toolkit-content,
 .home-page .home-page .content .toolkit-content {
   height: 100%;
   width: 100%;
+  position: relative;
+  top: 70px;
 }
 
 html .home-page .content .toolkit-content .toolkit-container,
@@ -333,10 +457,10 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
   margin-top: 50px;
   height: 400px;
   width: 80%;
-  border-radius: 5px;
-  background-color: #ece4e4;
-  -webkit-box-shadow: -2px 3px 5px #9b9b9b;
-          box-shadow: -2px 3px 5px #9b9b9b;
+  border-radius: 1px;
+  background-color: #2d323d;
+  -webkit-box-shadow: -2px 3px 5px #2c2c2c;
+          box-shadow: -2px 3px 5px #2c2c2c;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
@@ -346,6 +470,6 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hove
 #root .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
 .App .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
 .home-page .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover {
-  background-color: #c5c3c3;
+  background-color: #2f3541;
 }
 /*# sourceMappingURL=App.css.map */
