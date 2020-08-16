@@ -1,0 +1,17 @@
+export {default as Chordify} from "./chordify.png";
+export {default as Lyricly} from "./lyricly.png";
+export {default as OnlineWhite} from "./online.png";
+export {default as Cat} from "./Gitcat.png";
+export {default as Email} from "./email.png";
+export {default as Resume} from "./resume.png";
+export {default as HTML} from "./html.png";
+export {default as Javascript} from "./javascript.png";
+export {default as CSS} from "./css.png";
+export {default as Reacts} from "./react.png";
+export {default as Type} from "./type.png";
+export {default as Sass} from "./sass.png";
+export {default as Git} from "./git.png";
+export {default as Photo} from "./affinityphoto.png";
+export {default as Designer} from "./affinitydesigner.png";
+export {default as Node} from "./node.png"
+export {default as Frontend} from "./frontendLarge.png"

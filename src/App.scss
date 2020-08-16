@@ -52,47 +52,93 @@ body,
                     justify-content: center;
                     width: 100%;
                     height: 100%;
-                    .portolio-title {
-                        p {
-                            color: white;
-                            #position {
-                                font-size: 40px;
-                                color: white;
-                            }
-                            #location {
-                                opacity: 0.6;
-                            }
-                        }
-                    }
-
-                    .Links {
+                    .home-content{
                         display: flex;
                         flex-direction: column;
-                        flex-wrap: wrap;
-                        justify-content: center;
                         align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        .portolio-title {
+                            p {
+                                color: white;
+                                #position {
+                                    font-size: 40px;
+                                    color: white;
+                                }
+                                #location {
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                        .Links {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            top: 30px;
+                            width: 20%;
+                            height: 50px;
+    
+                            .images {
+                                height: 100px;
+    
+                                img {
+                                    padding: 5px;
+                                    height: 30px;
+                                    width: 30px;
+                                    transition: all 0.2s;
+                                    &:hover {
+                                        height: 35px;
+                                        width: 35px;
+    
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                
+                    .about-content{
+                        display: flex;
                         position: relative;
-                        top: 30px;
-                        width: 20%;
-                        height: 50px;
-
-                        .images {
-                            height: 100px;
-
-                            img {
-                                padding: 5px;
-                                height: 30px;
-                                width: 30px;
-                                transition: all 0.5s;
-                                &:hover {
-                                    height: 35px;
-                                    width: 35px;
-
-                                    cursor: pointer;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        width: 70%;
+                        height: 100%;
+                        color:#b6b4b4;
+                        img{
+                            height: 200px;
+                            width: 200px;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: greenyellow;
+                            }
+                            
+                        }
+                        p{
+                            a{
+                                text-decoration: none;
+                                font-weight: bold;
+                                color:#e0e0e0;
+                                text-transform: uppercase;
+                                transition: ease-in 0.3s;
+                                &:hover{
+                                    filter: brightness(150%) contrast(140%);
                                 }
                             }
                         }
                     }
+
                 }
             }
         }
@@ -105,7 +151,7 @@ body,
 
             .project-content {
                 display: flex;
-                height: 600px;
+                height: 700px;
                 flex-direction: column;
                 width: 100%;
 
@@ -148,49 +194,41 @@ body,
                             }
                         }
 
-                        #react{
-                            position: relative;
-                            top: 3px;
-                            height: 50px;
-                            width: 50px;
-                           
-                            transition: 0.2s all;
-                            &:hover {
-                                height: 55px;
-                                width: 55px;
-                                animation:spin 6s linear infinite;
-                            }
-                            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-                            
+                       
+                    }
+                }
+
+                .latest-works{
+                    position: relative;
+                    top:50px;
+                    .latest-works-title {
+                        font-family: "Oswald", sans-serif;
+                        text-align: center;
+                        #chapter {
+                            color: #eeeded;
+                            font-size: $section-h1;
+                        }
+                        #chapter-content {
+                            color: #eeeded;
+                            opacity: 0.7;
+                            font-size: $section-h2;
                         }
                     }
-                }
-
-                .latest-works-title {
-                    font-family: "Oswald", sans-serif;
-                    text-align: center;
-                    #chapter {
-                        color: #eeeded;
-                        font-size: $section-h1;
+    
+                    .latest-works-content {
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        align-content: flex-start;
+                        flex-wrap: wrap;
+                        margin: 10px;
+                        width: 100%;
+                        height: 400px;
+                        max-height: 400px;
                     }
-                    #chapter-content {
-                        color: #eeeded;
-                        opacity: 0.7;
-                        font-size: $section-h2;
-                    }
-                }
 
-                .latest-works-content {
-                    display: flex;
-                    position: relative;
-                    justify-content: center;
-                    align-content: flex-start;
-                    flex-wrap: wrap;
-                    margin: 10px;
-                    width: 100%;
-                    height: 400px;
-                    max-height: 400px;
                 }
+                
             }
             .toolkit-content {
                 height: 100%;

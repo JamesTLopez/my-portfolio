@@ -97,36 +97,58 @@ body .home-page .title main .title-content,
   height: 100%;
 }
 
-html .home-page .title main .title-content .portolio-title p,
-body .home-page .title main .title-content .portolio-title p,
-#root .home-page .title main .title-content .portolio-title p,
-.App .home-page .title main .title-content .portolio-title p,
-.home-page .home-page .title main .title-content .portolio-title p {
+html .home-page .title main .title-content .home-content,
+body .home-page .title main .title-content .home-content,
+#root .home-page .title main .title-content .home-content,
+.App .home-page .title main .title-content .home-content,
+.home-page .home-page .title main .title-content .home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+html .home-page .title main .title-content .home-content .portolio-title p,
+body .home-page .title main .title-content .home-content .portolio-title p,
+#root .home-page .title main .title-content .home-content .portolio-title p,
+.App .home-page .title main .title-content .home-content .portolio-title p,
+.home-page .home-page .title main .title-content .home-content .portolio-title p {
   color: white;
 }
 
-html .home-page .title main .title-content .portolio-title p #position,
-body .home-page .title main .title-content .portolio-title p #position,
-#root .home-page .title main .title-content .portolio-title p #position,
-.App .home-page .title main .title-content .portolio-title p #position,
-.home-page .home-page .title main .title-content .portolio-title p #position {
+html .home-page .title main .title-content .home-content .portolio-title p #position,
+body .home-page .title main .title-content .home-content .portolio-title p #position,
+#root .home-page .title main .title-content .home-content .portolio-title p #position,
+.App .home-page .title main .title-content .home-content .portolio-title p #position,
+.home-page .home-page .title main .title-content .home-content .portolio-title p #position {
   font-size: 40px;
   color: white;
 }
 
-html .home-page .title main .title-content .portolio-title p #location,
-body .home-page .title main .title-content .portolio-title p #location,
-#root .home-page .title main .title-content .portolio-title p #location,
-.App .home-page .title main .title-content .portolio-title p #location,
-.home-page .home-page .title main .title-content .portolio-title p #location {
+html .home-page .title main .title-content .home-content .portolio-title p #location,
+body .home-page .title main .title-content .home-content .portolio-title p #location,
+#root .home-page .title main .title-content .home-content .portolio-title p #location,
+.App .home-page .title main .title-content .home-content .portolio-title p #location,
+.home-page .home-page .title main .title-content .home-content .portolio-title p #location {
   opacity: 0.6;
 }
 
-html .home-page .title main .title-content .Links,
-body .home-page .title main .title-content .Links,
-#root .home-page .title main .title-content .Links,
-.App .home-page .title main .title-content .Links,
-.home-page .home-page .title main .title-content .Links {
+html .home-page .title main .title-content .home-content .Links,
+body .home-page .title main .title-content .home-content .Links,
+#root .home-page .title main .title-content .home-content .Links,
+.App .home-page .title main .title-content .home-content .Links,
+.home-page .home-page .title main .title-content .home-content .Links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,34 +170,103 @@ body .home-page .title main .title-content .Links,
   height: 50px;
 }
 
-html .home-page .title main .title-content .Links .images,
-body .home-page .title main .title-content .Links .images,
-#root .home-page .title main .title-content .Links .images,
-.App .home-page .title main .title-content .Links .images,
-.home-page .home-page .title main .title-content .Links .images {
+html .home-page .title main .title-content .home-content .Links .images,
+body .home-page .title main .title-content .home-content .Links .images,
+#root .home-page .title main .title-content .home-content .Links .images,
+.App .home-page .title main .title-content .home-content .Links .images,
+.home-page .home-page .title main .title-content .home-content .Links .images {
   height: 100px;
 }
 
-html .home-page .title main .title-content .Links .images img,
-body .home-page .title main .title-content .Links .images img,
-#root .home-page .title main .title-content .Links .images img,
-.App .home-page .title main .title-content .Links .images img,
-.home-page .home-page .title main .title-content .Links .images img {
+html .home-page .title main .title-content .home-content .Links .images img,
+body .home-page .title main .title-content .home-content .Links .images img,
+#root .home-page .title main .title-content .home-content .Links .images img,
+.App .home-page .title main .title-content .home-content .Links .images img,
+.home-page .home-page .title main .title-content .home-content .Links .images img {
   padding: 5px;
   height: 30px;
   width: 30px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-html .home-page .title main .title-content .Links .images img:hover,
-body .home-page .title main .title-content .Links .images img:hover,
-#root .home-page .title main .title-content .Links .images img:hover,
-.App .home-page .title main .title-content .Links .images img:hover,
-.home-page .home-page .title main .title-content .Links .images img:hover {
+html .home-page .title main .title-content .home-content .Links .images img:hover,
+body .home-page .title main .title-content .home-content .Links .images img:hover,
+#root .home-page .title main .title-content .home-content .Links .images img:hover,
+.App .home-page .title main .title-content .home-content .Links .images img:hover,
+.home-page .home-page .title main .title-content .home-content .Links .images img:hover {
   height: 35px;
   width: 35px;
   cursor: pointer;
+}
+
+html .home-page .title main .title-content .about-content,
+body .home-page .title main .title-content .about-content,
+#root .home-page .title main .title-content .about-content,
+.App .home-page .title main .title-content .about-content,
+.home-page .home-page .title main .title-content .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  height: 100%;
+  color: #b6b4b4;
+}
+
+html .home-page .title main .title-content .about-content img,
+body .home-page .title main .title-content .about-content img,
+#root .home-page .title main .title-content .about-content img,
+.App .home-page .title main .title-content .about-content img,
+.home-page .home-page .title main .title-content .about-content img {
+  height: 200px;
+  width: 200px;
+}
+
+html .home-page .title main .title-content .about-content img:before,
+body .home-page .title main .title-content .about-content img:before,
+#root .home-page .title main .title-content .about-content img:before,
+.App .home-page .title main .title-content .about-content img:before,
+.home-page .home-page .title main .title-content .about-content img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: greenyellow;
+}
+
+html .home-page .title main .title-content .about-content p a,
+body .home-page .title main .title-content .about-content p a,
+#root .home-page .title main .title-content .about-content p a,
+.App .home-page .title main .title-content .about-content p a,
+.home-page .home-page .title main .title-content .about-content p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+html .home-page .title main .title-content .about-content p a:hover,
+body .home-page .title main .title-content .about-content p a:hover,
+#root .home-page .title main .title-content .about-content p a:hover,
+.App .home-page .title main .title-content .about-content p a:hover,
+.home-page .home-page .title main .title-content .about-content p a:hover {
+  -webkit-filter: brightness(150%) contrast(140%);
+          filter: brightness(150%) contrast(140%);
 }
 
 html .home-page .content,
@@ -204,7 +295,7 @@ body .home-page .content .project-content,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
+  height: 700px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -301,77 +392,48 @@ body .home-page .content .project-content .project-header .images #javascript:ho
   width: 50px;
 }
 
-html .home-page .content .project-content .project-header .images #react,
-body .home-page .content .project-content .project-header .images #react,
-#root .home-page .content .project-content .project-header .images #react,
-.App .home-page .content .project-content .project-header .images #react,
-.home-page .home-page .content .project-content .project-header .images #react {
+html .home-page .content .project-content .latest-works,
+body .home-page .content .project-content .latest-works,
+#root .home-page .content .project-content .latest-works,
+.App .home-page .content .project-content .latest-works,
+.home-page .home-page .content .project-content .latest-works {
   position: relative;
-  top: 3px;
-  height: 50px;
-  width: 50px;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
+  top: 50px;
 }
 
-html .home-page .content .project-content .project-header .images #react:hover,
-body .home-page .content .project-content .project-header .images #react:hover,
-#root .home-page .content .project-content .project-header .images #react:hover,
-.App .home-page .content .project-content .project-header .images #react:hover,
-.home-page .home-page .content .project-content .project-header .images #react:hover {
-  height: 55px;
-  width: 55px;
-  -webkit-animation: spin 6s linear infinite;
-          animation: spin 6s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-html .home-page .content .project-content .latest-works-title,
-body .home-page .content .project-content .latest-works-title,
-#root .home-page .content .project-content .latest-works-title,
-.App .home-page .content .project-content .latest-works-title,
-.home-page .home-page .content .project-content .latest-works-title {
+html .home-page .content .project-content .latest-works .latest-works-title,
+body .home-page .content .project-content .latest-works .latest-works-title,
+#root .home-page .content .project-content .latest-works .latest-works-title,
+.App .home-page .content .project-content .latest-works .latest-works-title,
+.home-page .home-page .content .project-content .latest-works .latest-works-title {
   font-family: "Oswald", sans-serif;
   text-align: center;
 }
 
-html .home-page .content .project-content .latest-works-title #chapter,
-body .home-page .content .project-content .latest-works-title #chapter,
-#root .home-page .content .project-content .latest-works-title #chapter,
-.App .home-page .content .project-content .latest-works-title #chapter,
-.home-page .home-page .content .project-content .latest-works-title #chapter {
+html .home-page .content .project-content .latest-works .latest-works-title #chapter,
+body .home-page .content .project-content .latest-works .latest-works-title #chapter,
+#root .home-page .content .project-content .latest-works .latest-works-title #chapter,
+.App .home-page .content .project-content .latest-works .latest-works-title #chapter,
+.home-page .home-page .content .project-content .latest-works .latest-works-title #chapter {
   color: #eeeded;
   font-size: 30px;
 }
 
-html .home-page .content .project-content .latest-works-title #chapter-content,
-body .home-page .content .project-content .latest-works-title #chapter-content,
-#root .home-page .content .project-content .latest-works-title #chapter-content,
-.App .home-page .content .project-content .latest-works-title #chapter-content,
-.home-page .home-page .content .project-content .latest-works-title #chapter-content {
+html .home-page .content .project-content .latest-works .latest-works-title #chapter-content,
+body .home-page .content .project-content .latest-works .latest-works-title #chapter-content,
+#root .home-page .content .project-content .latest-works .latest-works-title #chapter-content,
+.App .home-page .content .project-content .latest-works .latest-works-title #chapter-content,
+.home-page .home-page .content .project-content .latest-works .latest-works-title #chapter-content {
   color: #eeeded;
   opacity: 0.7;
   font-size: 20px;
 }
 
-html .home-page .content .project-content .latest-works-content,
-body .home-page .content .project-content .latest-works-content,
-#root .home-page .content .project-content .latest-works-content,
-.App .home-page .content .project-content .latest-works-content,
-.home-page .home-page .content .project-content .latest-works-content {
+html .home-page .content .project-content .latest-works .latest-works-content,
+body .home-page .content .project-content .latest-works .latest-works-content,
+#root .home-page .content .project-content .latest-works .latest-works-content,
+.App .home-page .content .project-content .latest-works .latest-works-content,
+.home-page .home-page .content .project-content .latest-works .latest-works-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
