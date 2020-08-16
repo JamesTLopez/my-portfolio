@@ -14,10 +14,10 @@ function About() {
             currently still located in Windsor Ontario. Web development has
             always been the most enjoyable aspect during my 4 year education at
             the University and with my self taughts skill in design using
-            software such as <a href="https://affinity.serif.com/en-gb/photo/">Affinity Photo</a> and <a href="https://affinity.serif.com/en-gb/designer/">Affinity Designer</a>, I believe I would be a
+            software such as <a style={{color:"#ED91F6"}} href="https://affinity.serif.com/en-gb/photo/">Affinity Photo</a> and <a style={{color:"#53D0F7"}} href="https://affinity.serif.com/en-gb/designer/">Affinity Designer</a>, I believe I would be a
             great assest to any employer in the field, especially with front-end
             development. I am currently pursing an opportunity to development my
-            skills and hopefuly I could help others develop theirs.
+            skills and potentially could help others develop theirs.
           </p>
         </div>
       </div>

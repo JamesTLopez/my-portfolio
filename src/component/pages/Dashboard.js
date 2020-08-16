@@ -8,6 +8,7 @@ import Navbar from "../layout/Navbar";
 
 import Home from "../layout/Home"
 import About from "../layout/About"
+import Contact from "../layout/Contact"
 
 //Images
 
@@ -41,6 +42,7 @@ const Dashboard = () => {
            <Switch>
             <Route  exact path={`${useRouteMatch().path}`} component={Home}></Route>
             <Route  path={`/about`} component={About}></Route>
+            <Route  path={`/contact`} component={Contact}></Route>
           </Switch>
            
       

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 html,
 body,
@@ -53,7 +54,7 @@ body .home-page .title,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("./images/titl.jpg");
+  background-image: url("./images/image/titl.jpg");
   -webkit-filter: contrast(120%) sepia(10%);
           filter: contrast(120%) sepia(10%);
   background-size: inherit;
@@ -105,6 +106,7 @@ body .home-page .title main .title-content .home-content,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -117,6 +119,32 @@ body .home-page .title main .title-content .home-content,
           justify-content: center;
   width: 100%;
   height: 100%;
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    top: -200px;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: -200px;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
 }
 
 html .home-page .title main .title-content .home-content .portolio-title p,
@@ -222,29 +250,91 @@ body .home-page .title main .title-content .about-content,
   width: 70%;
   height: 100%;
   color: #b6b4b4;
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
-html .home-page .title main .title-content .about-content img,
-body .home-page .title main .title-content .about-content img,
-#root .home-page .title main .title-content .about-content img,
-.App .home-page .title main .title-content .about-content img,
-.home-page .home-page .title main .title-content .about-content img {
+@-webkit-keyframes slideIn {
+  0% {
+    left: 250px;
+    opacity: 0.1;
+  }
+  25% {
+    left: 150px;
+    opacity: 0.25;
+  }
+  50% {
+    left: 50px;
+    opacity: 0.5;
+  }
+  50% {
+    left: 25px;
+    opacity: 0.75;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    left: 250px;
+    opacity: 0.1;
+  }
+  25% {
+    left: 150px;
+    opacity: 0.25;
+  }
+  50% {
+    left: 50px;
+    opacity: 0.5;
+  }
+  50% {
+    left: 25px;
+    opacity: 0.75;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+html .home-page .title main .title-content .about-content .picture,
+body .home-page .title main .title-content .about-content .picture,
+#root .home-page .title main .title-content .about-content .picture,
+.App .home-page .title main .title-content .about-content .picture,
+.home-page .home-page .title main .title-content .about-content .picture {
+  position: relative;
   height: 200px;
   width: 200px;
 }
 
-html .home-page .title main .title-content .about-content img:before,
-body .home-page .title main .title-content .about-content img:before,
-#root .home-page .title main .title-content .about-content img:before,
-.App .home-page .title main .title-content .about-content img:before,
-.home-page .home-page .title main .title-content .about-content img:before {
-  content: '';
+html .home-page .title main .title-content .about-content .picture img,
+body .home-page .title main .title-content .about-content .picture img,
+#root .home-page .title main .title-content .about-content .picture img,
+.App .home-page .title main .title-content .about-content .picture img,
+.home-page .home-page .title main .title-content .about-content .picture img {
+  height: 200px;
+  width: 200px;
+}
+
+html .home-page .title main .title-content .about-content .picture:before,
+body .home-page .title main .title-content .about-content .picture:before,
+#root .home-page .title main .title-content .about-content .picture:before,
+.App .home-page .title main .title-content .about-content .picture:before,
+.home-page .home-page .title main .title-content .about-content .picture:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: greenyellow;
+  background: #ffffff;
+  -webkit-clip-path: circle(1px at 30% 15%);
+          clip-path: circle(1px at 30% 15%);
 }
 
 html .home-page .title main .title-content .about-content p a,
@@ -267,6 +357,317 @@ body .home-page .title main .title-content .about-content p a:hover,
 .home-page .home-page .title main .title-content .about-content p a:hover {
   -webkit-filter: brightness(150%) contrast(140%);
           filter: brightness(150%) contrast(140%);
+}
+
+html .home-page .title main .title-content .contact-content,
+body .home-page .title main .title-content .contact-content,
+#root .home-page .title main .title-content .contact-content,
+.App .home-page .title main .title-content .contact-content,
+.home-page .home-page .title main .title-content .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  height: 100%;
+  color: #b6b4b4;
+  -webkit-animation-name: slideLeft;
+          animation-name: slideLeft;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    right: 250px;
+    opacity: 0.1;
+  }
+  25% {
+    right: 150px;
+    opacity: 0.25;
+  }
+  50% {
+    right: 50px;
+    opacity: 0.5;
+  }
+  50% {
+    right: 25px;
+    opacity: 0.75;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    right: 250px;
+    opacity: 0.1;
+  }
+  25% {
+    right: 150px;
+    opacity: 0.25;
+  }
+  50% {
+    right: 50px;
+    opacity: 0.5;
+  }
+  50% {
+    right: 25px;
+    opacity: 0.75;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+html .home-page .title main .title-content .contact-content .contact-information,
+body .home-page .title main .title-content .contact-content .contact-information,
+#root .home-page .title main .title-content .contact-content .contact-information,
+.App .home-page .title main .title-content .contact-content .contact-information,
+.home-page .home-page .title main .title-content .contact-content .contact-information {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information,
+body .home-page .title main .title-content .contact-content .contact-information .information,
+#root .home-page .title main .title-content .contact-content .contact-information .information,
+.App .home-page .title main .title-content .contact-content .contact-information .information,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .images,
+body .home-page .title main .title-content .contact-content .contact-information .information .images,
+#root .home-page .title main .title-content .contact-content .contact-information .information .images,
+.App .home-page .title main .title-content .contact-content .contact-information .information .images,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  height: 80px;
+  width: 90px;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .images img,
+body .home-page .title main .title-content .contact-content .contact-information .information .images img,
+#root .home-page .title main .title-content .contact-content .contact-information .information .images img,
+.App .home-page .title main .title-content .contact-content .contact-information .information .images img,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .images img {
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .images img:hover,
+body .home-page .title main .title-content .contact-content .contact-information .information .images img:hover,
+#root .home-page .title main .title-content .contact-content .contact-information .information .images img:hover,
+.App .home-page .title main .title-content .contact-content .contact-information .information .images img:hover,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .images img:hover {
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text,
+body .home-page .title main .title-content .contact-content .contact-information .information .text,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  height: 80px;
+  width: 70%;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text button,
+body .home-page .title main .title-content .contact-content .contact-information .information .text button,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text button,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text button,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text button {
+  font-family: 'Oswald', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 280px;
+  font-size: 17px;
+  text-align: center;
+  border-style: solid 10px;
+  border-radius: 5px;
+  border-color: #adadad;
+  color: white;
+  background: rgba(219, 219, 219, 0.61);
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text button img,
+body .home-page .title main .title-content .contact-content .contact-information .information .text button img,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text button img,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text button img,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text button img {
+  position: relative;
+  top: 1px;
+  height: 10px;
+  right: 10px;
+  width: 10px;
+  margin-left: 20px;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text button #copy,
+body .home-page .title main .title-content .contact-content .contact-information .information .text button #copy,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text button #copy,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text button #copy,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text button #copy {
+  position: relative;
+  left: 5px;
+  height: 15px;
+  width: 15px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text button span,
+body .home-page .title main .title-content .contact-content .contact-information .information .text button span,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text button span,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text button span,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text button span {
+  position: relative;
+  left: 2px;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text button:hover,
+body .home-page .title main .title-content .contact-content .contact-information .information .text button:hover,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text button:hover,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text button:hover,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text button:hover {
+  background-color: #93b948;
+  border-color: #7fb612;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text .notify,
+body .home-page .title main .title-content .contact-content .contact-information .information .text .notify,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text .notify,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text .notify,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text .notify {
+  position: relative;
+  left: 20px;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text .notify #noti,
+body .home-page .title main .title-content .contact-content .contact-information .information .text .notify #noti,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text .notify #noti,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text .notify #noti,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text .notify #noti {
+  position: relative;
+  color: yellowgreen;
+  font-size: 20px;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.1;
+    left: -30px;
+  }
+  25% {
+    opacity: 1;
+    left: 0px;
+  }
+  70% {
+    opacity: 1;
+    left: 0px;
+  }
+  90% {
+    opacity: 1;
+    left: 0px;
+  }
+  100% {
+    opacity: 0;
+    left: -20px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+    left: -30px;
+  }
+  25% {
+    opacity: 1;
+    left: 0px;
+  }
+  70% {
+    opacity: 1;
+    left: 0px;
+  }
+  90% {
+    opacity: 1;
+    left: 0px;
+  }
+  100% {
+    opacity: 0;
+    left: -20px;
+  }
 }
 
 html .home-page .content,
