@@ -62,15 +62,27 @@ body,
                         justify-content: center;
                         width: 100%;
                         height: 100%;
-                        animation-name: slideUp;
+                        animation-name: slideIn;
                         animation-duration: 0.3s;
-                        @keyframes slideUp {
+                        @keyframes slideIn {
                             0% {
-                                top: -200px;
+                                left: 250px;
                                 opacity: 0.1;
                             }
+                            25% {
+                                left: 150px;
+                                opacity: 0.25;
+                            }
+                            50% {
+                                left: 50px;
+                                opacity: 0.5;
+                            }
+                            50% {
+                                left: 25px;
+                                opacity: 0.75;
+                            }
                             100% {
-                                top: 0px;
+                                left: 0px;
                                 opacity: 1;
                             }
                         }
@@ -192,7 +204,7 @@ body,
                         height: 100%;
                         color: #b6b4b4;
                         animation-name: slideLeft;
-                        animation-duration: 0.3s;
+                        animation-duration: 0.2s;
                         @keyframes slideLeft {
                             0% {
                                 right: 250px;
@@ -364,14 +376,20 @@ body,
                     box-shadow: 0px 10px 99px #121418;
                     .images {
                         display: flex;
+                        position: relative;
+                        flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         padding: 5px;
-                        height: 60px;
+                        height: 150px;
                         width: 90px;
+                        transition: 0.6 all;
+                        
+                      
                         img {
                             height: 50px;
                             width: 50px;
+                            padding:20px;
                             transition: 0.2s all;
                             &:hover {
                                 height: 55px;
@@ -379,17 +397,43 @@ body,
                                 filter: brightness(120%) contrast(120%);
                             }
                         }
+
                         #javascript {
                             position: relative;
                             top: 3px;
-                            height: 45px;
+                            height: 46px;
                             width: 45px;
                             transition: 0.2s all;
                             &:hover {
                                 height: 50px;
                                 width: 50px;
                             }
+                       
                         }
+
+                        #tooltip{
+                            font-family: "Oswald", sans-serif;
+                            opacity: 0;
+                            position: absolute;
+                            bottom: 10px;
+                            width: 90px;
+                            background-color: #1e2229;
+                            font-size: 15px;
+                            color: #fff;
+                            text-align: center;
+                            border-radius: 6px;
+                            padding: 5px 0;
+                            transition: all 0.3s;
+                            
+                        }
+                        &:hover{
+                            #tooltip{
+                                opacity: 1;
+                               
+                            }
+                        }
+                       
+                        
                     }
                 }
 

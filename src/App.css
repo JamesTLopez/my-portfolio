@@ -119,30 +119,54 @@ body .home-page .title main .title-content .home-content,
           justify-content: center;
   width: 100%;
   height: 100%;
-  -webkit-animation-name: slideUp;
-          animation-name: slideUp;
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
 }
 
-@-webkit-keyframes slideUp {
+@-webkit-keyframes slideIn {
   0% {
-    top: -200px;
+    left: 250px;
     opacity: 0.1;
   }
+  25% {
+    left: 150px;
+    opacity: 0.25;
+  }
+  50% {
+    left: 50px;
+    opacity: 0.5;
+  }
+  50% {
+    left: 25px;
+    opacity: 0.75;
+  }
   100% {
-    top: 0px;
+    left: 0px;
     opacity: 1;
   }
 }
 
-@keyframes slideUp {
+@keyframes slideIn {
   0% {
-    top: -200px;
+    left: 250px;
     opacity: 0.1;
   }
+  25% {
+    left: 150px;
+    opacity: 0.25;
+  }
+  50% {
+    left: 50px;
+    opacity: 0.5;
+  }
+  50% {
+    left: 25px;
+    opacity: 0.75;
+  }
   100% {
-    top: 0px;
+    left: 0px;
     opacity: 1;
   }
 }
@@ -256,29 +280,6 @@ body .home-page .title main .title-content .about-content,
           animation-duration: 0.3s;
 }
 
-@-webkit-keyframes slideIn {
-  0% {
-    left: 250px;
-    opacity: 0.1;
-  }
-  25% {
-    left: 150px;
-    opacity: 0.25;
-  }
-  50% {
-    left: 50px;
-    opacity: 0.5;
-  }
-  50% {
-    left: 25px;
-    opacity: 0.75;
-  }
-  100% {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
 @keyframes slideIn {
   0% {
     left: 250px;
@@ -383,8 +384,8 @@ body .home-page .title main .title-content .contact-content,
   color: #b6b4b4;
   -webkit-animation-name: slideLeft;
           animation-name: slideLeft;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
 }
 
 @-webkit-keyframes slideLeft {
@@ -738,6 +739,11 @@ body .home-page .content .project-content .project-header .images,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -745,8 +751,10 @@ body .home-page .content .project-content .project-header .images,
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
-  height: 60px;
+  height: 150px;
   width: 90px;
+  -webkit-transition: 0.6 all;
+  transition: 0.6 all;
 }
 
 html .home-page .content .project-content .project-header .images img,
@@ -756,6 +764,7 @@ body .home-page .content .project-content .project-header .images img,
 .home-page .home-page .content .project-content .project-header .images img {
   height: 50px;
   width: 50px;
+  padding: 20px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
@@ -778,7 +787,7 @@ body .home-page .content .project-content .project-header .images #javascript,
 .home-page .home-page .content .project-content .project-header .images #javascript {
   position: relative;
   top: 3px;
-  height: 45px;
+  height: 46px;
   width: 45px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
@@ -791,6 +800,34 @@ body .home-page .content .project-content .project-header .images #javascript:ho
 .home-page .home-page .content .project-content .project-header .images #javascript:hover {
   height: 50px;
   width: 50px;
+}
+
+html .home-page .content .project-content .project-header .images #tooltip,
+body .home-page .content .project-content .project-header .images #tooltip,
+#root .home-page .content .project-content .project-header .images #tooltip,
+.App .home-page .content .project-content .project-header .images #tooltip,
+.home-page .home-page .content .project-content .project-header .images #tooltip {
+  font-family: "Oswald", sans-serif;
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  width: 90px;
+  background-color: #1e2229;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+html .home-page .content .project-content .project-header .images:hover #tooltip,
+body .home-page .content .project-content .project-header .images:hover #tooltip,
+#root .home-page .content .project-content .project-header .images:hover #tooltip,
+.App .home-page .content .project-content .project-header .images:hover #tooltip,
+.home-page .home-page .content .project-content .project-header .images:hover #tooltip {
+  opacity: 1;
 }
 
 html .home-page .content .project-content .latest-works,

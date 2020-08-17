@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 
 //Components
@@ -10,11 +10,6 @@ import Home from "../layout/Home"
 import About from "../layout/About"
 import Contact from "../layout/Contact"
 
-//Images
-
-// import Frontend from "../../images/frontendLarge.png";
-// import Server from "../../images/server.png";
-// import Webtech from "../../images/webtech.png";
 
 import {
   Chordify,
@@ -33,6 +28,9 @@ import {
 } from "../../images/images";
 
 const Dashboard = () => {
+
+
+
   return (
     <div className="home-page">
       <section className="title">
@@ -52,34 +50,44 @@ const Dashboard = () => {
         <div className="project-content">
           <div className="project-header">
             <div className="images">
-              <img src={Sass} alt="Sass"></img>
+              <img id="sass" src={Sass} alt="Sass"></img>
+              <p id="tooltip">Sass</p>
             </div>
             <div className="images">
-              <img src={CSS} alt="CSS"></img>
+              <img id="css" src={CSS} alt="CSS"></img>
+              <p id="tooltip">CSS</p>
             </div>
             <div className="images">
-              <img src={HTML} alt="Html"></img>
+              <img id="html" src={HTML} alt="Html"></img>
+              <p id="tooltip">HTML</p>
             </div>
             <div className="images">
               <img id="javascript" src={Javascript} alt="JavaScript"></img>
+              <p id="tooltip">Javascript</p>
             </div>
             <div className="images">
               <img id="react" src={Reacts} alt="React"></img>
+              <p id="tooltip">React</p>
             </div>
             <div className="images">
-              <img src={Type} alt="Type"></img>
+              <img id="typescript" src={Type} alt="Type"></img>
+              <p id="tooltip">Typescript</p>
             </div>
             <div className="images">
-              <img src={Node} alt="Node"></img>
+              <img id="node" src={Node} alt="Node"></img>
+              <p id="tooltip">NodeJs</p>
             </div>
             <div className="images">
-              <img src={Git} alt="Git"></img>
+              <img id="git" src={Git} alt="Git"></img>
+              <p id="tooltip">Git</p>
             </div>
             <div className="images">
-              <img src={Photo} alt="Git"></img>
+              <img id="photo" src={Photo} alt="Photo"></img>
+              <p id="tooltip">Affinity Photo</p>
             </div>
             <div className="images">
-              <img src={Designer} alt="Git"></img>
+              <img id="designer" src={Designer} alt="Designer"></img>
+              <p id="tooltip">Affinity Designer</p>
             </div>
           </div>
           <div className="latest-works">
