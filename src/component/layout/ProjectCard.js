@@ -1,7 +1,7 @@
 import React from "react";
 import '../../styles/card.css'
 
-function ProjectCard({ name, image, id ,hov}) {
+function ProjectCard({ name, image, id ,hov,demo_url,about_url,source_url}) {
   return (
     <div className="card-container">
       <div className={`card ${hov}`}>
@@ -18,7 +18,9 @@ function ProjectCard({ name, image, id ,hov}) {
               <button className="but2">About</button>
             </section>
             <section>
-              <button className="but3">Source Code</button>
+              <a href={source_url}>
+                <button className="but3">Source Code</button>
+              </a>
             </section>
           </div>
         </div>

@@ -101,18 +101,27 @@ const Dashboard = () => {
                 image={Chordify}
                 id="chordify"
                 hov="hov1"
+                demo_url=""
+                about_url=""
+                source_url="https://github.com/JamesTLopez/chord-finder"
               />
               <ProjectCard
-                name="Lyricly"
+                name="Easy-Git"
                 image={Lyricly}
                 id="lyricly"
                 hov="hov2"
+                demo_url=""
+                about_url=""
+                source_url="https://github.com/JamesTLopez/easy-git"
               />
               <ProjectCard
                 name="Whiteboard"
                 image={OnlineWhite}
                 id="onlinewhite"
                 hov="hov3"
+                demo_url=""
+                about_url=""
+                source_url="https://github.com/JamesTLopez/Online-Whiteboard"
               />
             </div>
           </div>
