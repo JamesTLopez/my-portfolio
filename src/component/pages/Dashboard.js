@@ -101,7 +101,7 @@ const Dashboard = () => {
                 image={Chordify}
                 id="chordify"
                 hov="hov1"
-                demo_url=""
+                demo_url="https://jamestlopez.github.io/chord-finder/"
                 about_url=""
                 source_url="https://github.com/JamesTLopez/chord-finder"
               />
