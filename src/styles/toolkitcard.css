@@ -1,1 +1,31 @@
-/* No CSS *//*# sourceMappingURL=toolkitcard.css.map */
+.toolkit-card-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  width: 200px;
+  background-color: #59637e;
+  margin: 10px;
+}
+
+.toolkit-card-container .tookit-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.toolkit-card-container .tookit-card .image-box img {
+  height: 100px;
+  width: 100px;
+}
+/*# sourceMappingURL=toolkitcard.css.map */

@@ -24,7 +24,9 @@ import {
   Git,
   Photo,
   Designer,
-  Node
+  Node,
+  GithubCat,
+  Concurrent
 } from "../../images/images";
 
 const Dashboard = () => {
@@ -107,7 +109,7 @@ const Dashboard = () => {
               />
               <ProjectCard
                 name="Easy-Git"
-                image={Lyricly}
+                image={GithubCat}
                 id="lyricly"
                 hov="hov2"
                 demo_url=""
@@ -129,10 +131,21 @@ const Dashboard = () => {
         <div className="toolkit-content">
           <div className="toolkit-container">
             <div className="toolkit-title">
-              <p id="chapter">Toolkit</p>
-              <p id="chapter-content">Technologies</p>
+              <p id="chapter-content">All Projects</p>
             </div>
-            <div class="toolkit-cards"></div>
+            <div class="toolkit-cards">
+              <div className="card-container">
+                <ToolkitCard image={Concurrent}/>
+                <ToolkitCard/>
+                <ToolkitCard/>
+                <ToolkitCard/>
+                <ToolkitCard/>
+                <ToolkitCard/>
+                
+                
+
+              </div>
+            </div>
           </div>
         </div>
       </section>

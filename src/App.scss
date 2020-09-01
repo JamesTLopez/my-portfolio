@@ -374,6 +374,7 @@ body,
                     margin-bottom: 50px;
                     background-color: #2d313a;
                     box-shadow: 0px 10px 99px #121418;
+                   
                     .images {
                         display: flex;
                         position: relative;
@@ -436,7 +437,12 @@ body,
                         
                     }
                 }
-
+                @media (max-width:930px) {
+                    .project-header{
+                        display: none;;
+                    }
+                       
+                   }
                 .latest-works {
                     position: relative;
                     top: 50px;
@@ -467,13 +473,17 @@ body,
                     }
                 }
             }
+
             .toolkit-content {
                 height: 100%;
+                min-height: 300px;
                 width: 100%;
                 position: relative;
-                top: 70px;
+                top:200px;
 
                 .toolkit-container {
+                    position: relative;
+                
                     width: 100%;
                     display: flex;
                     flex-direction: column;
@@ -493,18 +503,44 @@ body,
                         }
                     }
                     .toolkit-cards {
+                        position: relative;
+                        display: flex;
                         margin-top: 50px;
-                        height: 400px;
-                        width: 80%;
-                        border-radius: 1px;
+                        min-height: 210px;
+                        width: 65%;
+                        // min-width: 65%;
+                        max-width: 900px;
+                        border-radius: 2px;
                         background-color: #2d323d;
                         box-shadow: -2px 3px 5px #2c2c2c;
-                        transition: ease 0.5s;
+                        transition: ease 0.2s;
                         &:hover {
                             background-color: #2f3541;
                         }
+                        .card-container{
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            border-radius: 1px;
+                            padding-top:20px;
+                            padding-bottom:20px;
+                            background-color:#333a4b;
+                          
+                        }
                     }
                 }
+            }
+            @media (max-width:930px) {
+                .toolkit-content {
+                    height: 100%;
+                    min-height: 300px;
+                    width: 100%;
+                    position: relative;
+                    top:400px;
+    
+                    
+                }
+                
             }
         }
     }

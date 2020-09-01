@@ -830,6 +830,16 @@ body .home-page .content .project-content .project-header .images:hover #tooltip
   opacity: 1;
 }
 
+@media (max-width: 930px) {
+  html .home-page .content .project-content .project-header,
+  body .home-page .content .project-content .project-header,
+  #root .home-page .content .project-content .project-header,
+  .App .home-page .content .project-content .project-header,
+  .home-page .home-page .content .project-content .project-header {
+    display: none;
+  }
+}
+
 html .home-page .content .project-content .latest-works,
 body .home-page .content .project-content .latest-works,
 #root .home-page .content .project-content .latest-works,
@@ -895,9 +905,10 @@ body .home-page .content .toolkit-content,
 .App .home-page .content .toolkit-content,
 .home-page .home-page .content .toolkit-content {
   height: 100%;
+  min-height: 300px;
   width: 100%;
   position: relative;
-  top: 70px;
+  top: 200px;
 }
 
 html .home-page .content .toolkit-content .toolkit-container,
@@ -905,6 +916,7 @@ body .home-page .content .toolkit-content .toolkit-container,
 #root .home-page .content .toolkit-content .toolkit-container,
 .App .home-page .content .toolkit-content .toolkit-container,
 .home-page .home-page .content .toolkit-content .toolkit-container {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,15 +966,20 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
 #root .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
 .App .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
 .home-page .home-page .content .toolkit-content .toolkit-container .toolkit-cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 50px;
-  height: 400px;
-  width: 80%;
-  border-radius: 1px;
+  min-height: 210px;
+  width: 65%;
+  max-width: 900px;
+  border-radius: 2px;
   background-color: #2d323d;
   -webkit-box-shadow: -2px 3px 5px #2c2c2c;
           box-shadow: -2px 3px 5px #2c2c2c;
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 
 html .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
@@ -971,5 +988,38 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hove
 .App .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover,
 .home-page .home-page .content .toolkit-content .toolkit-container .toolkit-cards:hover {
   background-color: #2f3541;
+}
+
+html .home-page .content .toolkit-content .toolkit-container .toolkit-cards .card-container,
+body .home-page .content .toolkit-content .toolkit-container .toolkit-cards .card-container,
+#root .home-page .content .toolkit-content .toolkit-container .toolkit-cards .card-container,
+.App .home-page .content .toolkit-content .toolkit-container .toolkit-cards .card-container,
+.home-page .home-page .content .toolkit-content .toolkit-container .toolkit-cards .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333a4b;
+}
+
+@media (max-width: 930px) {
+  html .home-page .content .toolkit-content,
+  body .home-page .content .toolkit-content,
+  #root .home-page .content .toolkit-content,
+  .App .home-page .content .toolkit-content,
+  .home-page .home-page .content .toolkit-content {
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+    position: relative;
+    top: 400px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

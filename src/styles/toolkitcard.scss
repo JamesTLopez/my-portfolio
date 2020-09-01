@@ -1,3 +1,23 @@
-.card-container{
-    
+.toolkit-card-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    background-color:#59637e;
+    margin:10px;
+    .tookit-card{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top:20px;
+        .image-box{
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+    }
 }
