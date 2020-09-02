@@ -1,7 +1,7 @@
 import React from "react";
-import '../../styles/toolkitcard.css'
+import "../../styles/toolkitcard.css";
 
-function ToolkitCard({ name, image, id, hov }) {
+function ToolkitCard({ name, image,source_url,id }) {
   return (
     <div className="toolkit-card-container">
       <div className={`tookit-card`}>
@@ -10,10 +10,15 @@ function ToolkitCard({ name, image, id, hov }) {
         </div>
         <div className="content-box">
           <div className="content-title">
-            <label></label>
+          <label>{name}</label>
           </div>
           <div className="content-container">
-
+            <a href="www.google.com">
+              <button>About</button>
+            </a>
+            <a href={source_url}>
+              <button>Source Code</button>
+            </a>
           </div>
         </div>
       </div>

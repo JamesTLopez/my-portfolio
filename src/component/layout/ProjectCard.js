@@ -1,7 +1,15 @@
-import React from "react";
-import '../../styles/card.css'
+import React, { useState } from "react";
+import "../../styles/card.css";
 
-function ProjectCard({ name, image, id ,hov,demo_url,about_url,source_url}) {
+function ProjectCard({ name, image, id, hov, demo_url, source_url ,demo_example,description,tech}) {
+  const [isModal, updateModal] = useState(false);
+
+  const showModal = () => {
+    console.log("Hellos");
+    console.log(isModal);
+    updateModal(!isModal);
+  };
+
   return (
     <div className="card-container">
       <div className={`card ${hov}`}>
@@ -12,12 +20,14 @@ function ProjectCard({ name, image, id ,hov,demo_url,about_url,source_url}) {
           <p>{name}</p>
           <div className="button-group">
             <section>
-            <a href={demo_url}>
-              <button className="but1">Demo</button>
-            </a>
+              <a href={demo_url}>
+                <button className="but1">Demo</button>
+              </a>
             </section>
             <section>
-              <button className="but2">About</button>
+              <button onClick={showModal} className="but2">
+                About
+              </button>
             </section>
             <section>
               <a href={source_url}>
@@ -27,6 +37,33 @@ function ProjectCard({ name, image, id ,hov,demo_url,about_url,source_url}) {
           </div>
         </div>
       </div>
+
+      {isModal ? (
+        <div id="myModal" className="modal" onClick={showModal}>
+          <div className="modal-content">
+            <div className="exit">
+              <span onClick={showModal} className="close">
+                &times;
+              </span>
+            </div>
+            <div className="info-area">
+              <h1>Demo</h1>
+              <img src={demo_example} alt="Demo not found"></img>
+              <div className="description">
+                <h3>About</h3>
+                {description}
+                <h3>Technologies</h3>
+                <div className="tech">
+                {tech.map(item => (
+                  <img key={item} src={item} alt='Temporary'></img>
+                ))}
+                </div>
+         
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

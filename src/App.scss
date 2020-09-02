@@ -507,7 +507,8 @@ body,
                         display: flex;
                         margin-top: 50px;
                         min-height: 210px;
-                        width: 65%;
+                        justify-content: center;
+                        width: 70%;
                         // min-width: 65%;
                         max-width: 900px;
                         border-radius: 2px;
@@ -524,7 +525,7 @@ body,
                             border-radius: 1px;
                             padding-top:20px;
                             padding-bottom:20px;
-                            background-color:#333a4b;
+              
                           
                         }
                     }
@@ -536,7 +537,7 @@ body,
                     min-height: 300px;
                     width: 100%;
                     position: relative;
-                    top:400px;
+                    top:800px;
     
                     
                 }

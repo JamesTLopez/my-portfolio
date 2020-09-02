@@ -31,6 +31,7 @@ function Contact() {
         </div>
         <div className="contact-information">
           <div className="information">
+            
             <div className="images">
               <img id="Cat" src={Cat} alt="Github" />
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "../../styles/navbar.css"
 
 function Navbar() {
@@ -13,17 +13,17 @@ function Navbar() {
           <nav>
             <ul>
               <li>
-                <Link id="Link" to="/">
+                <Link id="Link" to="/my-portfolio">
                   Home
                 </Link>
               </li>
               <li>
-                <Link id="Link" to={`/about`}>
+                <Link id="Link" to={`/my-portfolio/about`}>
                   About
                 </Link>
               </li>
               <li>
-                <Link id="Link" to="/contact">
+                <Link id="Link" to="/my-portfolio/contact">
                   Contact
                 </Link>
               </li>

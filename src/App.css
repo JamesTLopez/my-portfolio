@@ -972,7 +972,10 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards,
   display: flex;
   margin-top: 50px;
   min-height: 210px;
-  width: 65%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
   max-width: 900px;
   border-radius: 2px;
   background-color: #2d323d;
@@ -1006,7 +1009,6 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards .car
   border-radius: 1px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #333a4b;
 }
 
 @media (max-width: 930px) {
@@ -1019,7 +1021,7 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards .car
     min-height: 300px;
     width: 100%;
     position: relative;
-    top: 400px;
+    top: 800px;
   }
 }
 /*# sourceMappingURL=App.css.map */

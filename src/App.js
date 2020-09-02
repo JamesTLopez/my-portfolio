@@ -9,7 +9,7 @@ function App() {
     <Router> 
       <div className="App">
         <Switch>
-            <Route path="/" component={Dashboard}></Route>
+            <Route path="/my-portfolio" component={Dashboard}></Route>
         </Switch>
       </div>
     </Router>

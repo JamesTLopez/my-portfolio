@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 
 //Components
@@ -6,14 +6,12 @@ import ProjectCard from "../layout/ProjectCard";
 import ToolkitCard from "../layout/ToolkitCard";
 import Navbar from "../layout/Navbar";
 
-import Home from "../layout/Home"
-import About from "../layout/About"
-import Contact from "../layout/Contact"
-
+import Home from "../layout/Home";
+import About from "../layout/About";
+import Contact from "../layout/Contact";
 
 import {
   Chordify,
-  Lyricly,
   OnlineWhite,
   HTML,
   Javascript,
@@ -26,26 +24,25 @@ import {
   Designer,
   Node,
   GithubCat,
-  Concurrent
+  Concurrent,
+  Bootstrap
 } from "../../images/images";
 
 const Dashboard = () => {
-
-
-
   return (
     <div className="home-page">
       <section className="title">
         <Navbar />
         <main>
-          
-           <Switch>
-            <Route  exact path={`${useRouteMatch().path}`} component={Home}></Route>
-            <Route  path={`/about`} component={About}></Route>
-            <Route  path={`/contact`} component={Contact}></Route>
+          <Switch>
+            <Route
+              exact
+              path={`${useRouteMatch().path}`}
+              component={Home}
+            ></Route>
+            <Route path={`/my-portfolio/about`} component={About}></Route>
+            <Route path={`/my-portfolio/contact`} component={Contact}></Route>
           </Switch>
-           
-      
         </main>
       </section>
       <section className="content">
@@ -84,7 +81,7 @@ const Dashboard = () => {
               <p id="tooltip">Git</p>
             </div>
             <div className="images">
-              <img id="photo" src={Photo} alt="Photo"></img>
+              <img id="photo" src={Photo} alt="AffinityPhoto"></img>
               <p id="tooltip">Affinity Photo</p>
             </div>
             <div className="images">
@@ -106,15 +103,21 @@ const Dashboard = () => {
                 demo_url="https://jamestlopez.github.io/chord-finder/"
                 about_url=""
                 source_url="https://github.com/JamesTLopez/chord-finder"
+                demo_example="https://user-images.githubusercontent.com/44413841/88328694-d3767b80-ccf6-11ea-9d21-ee3c975893b9.gif"
+                description="A chord finding app that displays the type of chord played based on the notes pressed on the keyboard or tells the notes a chord is create from the selected chord buttons displayed at the bottom."
+                tech={[HTML,Reacts,Javascript,Node,Sass]}
               />
               <ProjectCard
                 name="Easy-Git"
                 image={GithubCat}
                 id="lyricly"
                 hov="hov2"
-                demo_url=""
+                demo_url="https://jamestlopez.github.io/easy-git/"
                 about_url=""
                 source_url="https://github.com/JamesTLopez/easy-git"
+                demo_example="https://user-images.githubusercontent.com/44413841/88328694-d3767b80-ccf6-11ea-9d21-ee3c975893b9.gif"
+                description="A simple react typescript app that searches and displays a users github repos and information."
+                tech={[HTML,Reacts,Type,Node,Sass]}
               />
               <ProjectCard
                 name="Whiteboard"
@@ -124,6 +127,9 @@ const Dashboard = () => {
                 demo_url=""
                 about_url=""
                 source_url="https://github.com/JamesTLopez/Online-Whiteboard"
+                demo_example="https://user-images.githubusercontent.com/44413841/88430155-f58aff00-cdc5-11ea-8bbc-f92eb68d9067.gif"
+                description="An online lobby that allows multiple clients to enter a room and simultaniously draw on the displayed area and chat with others in a separate text field."
+                tech={[HTML,Reacts,Javascript,CSS,Node,Bootstrap]}
               />
             </div>
           </div>
@@ -133,17 +139,18 @@ const Dashboard = () => {
             <div className="toolkit-title">
               <p id="chapter-content">All Projects</p>
             </div>
-            <div class="toolkit-cards">
+            <div className="toolkit-cards">
               <div className="card-container">
-                <ToolkitCard image={Concurrent}/>
-                <ToolkitCard/>
-                <ToolkitCard/>
-                <ToolkitCard/>
-                <ToolkitCard/>
-                <ToolkitCard/>
-                
-                
-
+                <ToolkitCard
+                  name="Concurrent File Editing"
+                  image={Concurrent}
+                  source_url="https://github.com/JamesTLopez/Concurrent-File-Editing"
+                />
+                <ToolkitCard
+                  name="my-portfolio"
+                  image={Concurrent}
+                  source_url="https://github.com/JamesTLopez/my-portfolio"
+                />
               </div>
             </div>
           </div>

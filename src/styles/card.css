@@ -1,6 +1,8 @@
 .card-container {
   position: relative;
   margin: 30px;
+  /* Modal Content */
+  /* The Close Button */
 }
 
 .card-container .hov1:hover {
@@ -279,5 +281,110 @@
   visibility: visible;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+}
+
+.card-container .modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 10000;
+  /* Sit on top */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.027);
+  /* Black w/ opacity */
+}
+
+.card-container .modal-content {
+  background-color: #515764;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 70%;
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 10px 15px rgba(22, 22, 22, 0.671);
+          box-shadow: 7px 10px 15px rgba(22, 22, 22, 0.671);
+}
+
+.card-container .modal-content .info-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .modal-content .info-area img {
+  width: 80%;
+  height: 50%;
+}
+
+.card-container .modal-content .info-area .description {
+  width: 80%;
+}
+
+.card-container .modal-content .info-area .description .tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.card-container .modal-content .info-area .description .tech img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-container .modal-content .info-area .description p {
+  width: 80%;
+}
+
+.card-container .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card-container .close:hover, .card-container .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=card.css.map */
