@@ -77,7 +77,7 @@ function Contact() {
               <img id="Resume" src={Resume} alt="Resume" />
             </div>
             <div className="text">
-                <button >Resume</button>
+                <button id="Resume">Resume</button>
             </div>
           </div>
         </div>

@@ -529,6 +529,19 @@ body .home-page .title main .title-content .contact-content .contact-information
   width: 70%;
 }
 
+html .home-page .title main .title-content .contact-content .contact-information .information .text #Resume,
+body .home-page .title main .title-content .contact-content .contact-information .information .text #Resume,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text #Resume,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text #Resume,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text #Resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 html .home-page .title main .title-content .contact-content .contact-information .information .text button,
 body .home-page .title main .title-content .contact-content .contact-information .information .text button,
 #root .home-page .title main .title-content .contact-content .contact-information .information .text button,
@@ -547,7 +560,6 @@ body .home-page .title main .title-content .contact-content .contact-information
   height: 30px;
   width: 280px;
   font-size: 17px;
-  text-align: center;
   border-style: solid 10px;
   border-radius: 5px;
   border-color: #adadad;

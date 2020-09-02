@@ -115,7 +115,7 @@ const Dashboard = () => {
                 demo_url="https://jamestlopez.github.io/easy-git/"
                 about_url=""
                 source_url="https://github.com/JamesTLopez/easy-git"
-                demo_example="https://user-images.githubusercontent.com/44413841/88328694-d3767b80-ccf6-11ea-9d21-ee3c975893b9.gif"
+                demo_example="https://user-images.githubusercontent.com/44413841/91918490-06664480-ec91-11ea-8a1f-5e983cb8aa2f.gif"
                 description="A simple react typescript app that searches and displays a users github repos and information."
                 tech={[HTML,Reacts,Type,Node,Sass]}
               />
@@ -124,7 +124,7 @@ const Dashboard = () => {
                 image={OnlineWhite}
                 id="onlinewhite"
                 hov="hov3"
-                demo_url=""
+                demo_url={null}
                 about_url=""
                 source_url="https://github.com/JamesTLopez/Online-Whiteboard"
                 demo_example="https://user-images.githubusercontent.com/44413841/88430155-f58aff00-cdc5-11ea-8bbc-f92eb68d9067.gif"
@@ -145,11 +145,16 @@ const Dashboard = () => {
                   name="Concurrent File Editing"
                   image={Concurrent}
                   source_url="https://github.com/JamesTLopez/Concurrent-File-Editing"
+                  demo_example="https://user-images.githubusercontent.com/44413841/88588057-ece43400-d024-11ea-99dc-896e9381ac99.gif"
+                  description="A concurrent file editing app that allows users to save and access created documents. Users and simultaneously edit the document at the same time"
+                  tech={[HTML]}
                 />
                 <ToolkitCard
                   name="my-portfolio"
                   image={Concurrent}
                   source_url="https://github.com/JamesTLopez/my-portfolio"
+                  description="The repository for my portfolio website"
+                  tech={[HTML,Reacts,Sass,Javascript]}
                 />
               </div>
             </div>

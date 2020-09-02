@@ -270,6 +270,14 @@ body,
                                     padding: 5px;
                                     height: 80px;
                                     width: 70%;
+                                    
+                                    #Resume{
+                                        display: flex;
+                                        justify-content: center;
+                                        
+                                    }
+
+                                  
                                     button{
                                         font-family: 'Oswald', sans-serif;
                                         display: flex;
@@ -278,7 +286,7 @@ body,
                                         height: 30px;
                                         width: 280px;
                                         font-size: 17px;
-                                        text-align: center;
+                                  
                                         border-style:solid 10px;
                                         border-radius:5px;
                                         border-color:rgb(173, 173, 173);
@@ -286,6 +294,7 @@ body,
                                         background:rgba(219, 219, 219, 0.61);
                                         text-decoration: none;
                                         transition: all 0.5s;
+                                     
                                         img{
                                             position: relative;
                                             top:1px;
