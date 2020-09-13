@@ -25,7 +25,8 @@ import {
   Node,
   GithubCat,
   Concurrent,
-  Bootstrap
+  Bootstrap,
+  AudioVis
 } from "../../images/images";
 
 const Dashboard = () => {
@@ -120,10 +121,22 @@ const Dashboard = () => {
                 tech={[HTML,Reacts,Type,Node,Sass]}
               />
               <ProjectCard
+                name="Audio Visulizer"
+                image={AudioVis}
+                id="audiovis"
+                hov="hov3"
+                demo_url="https://jamestlopez.github.io/easy-git/"
+                about_url=""
+                source_url="https://github.com/JamesTLopez/audio-visualizer"
+                demo_example="https://user-images.githubusercontent.com/44413841/93008254-a39e6400-f540-11ea-8af4-3781fc750691.gif"
+                description="An app that analyzes the frequency spectrum of a input audio media file and visualizes it using the animation library p5."
+                tech={[HTML,Reacts,Type,Sass]}
+              />
+              <ProjectCard
                 name="Whiteboard"
                 image={OnlineWhite}
                 id="onlinewhite"
-                hov="hov3"
+                hov="hov4"
                 demo_url={null}
                 about_url=""
                 source_url="https://github.com/JamesTLopez/Online-Whiteboard"

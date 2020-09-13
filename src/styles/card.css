@@ -80,11 +80,49 @@
 }
 
 .card-container .hov3:hover {
-  background-color: #489ffc;
+  background-color: #333baa;
   color: #fdfcfc;
 }
 
 .card-container .hov3:hover button {
+  width: 70%;
+  height: 20px;
+  margin: 2px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 12px;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #75a4d6), color-stop(50%, transparent));
+  background-image: linear-gradient(to right, #75a4d6 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-container .hov3:hover button:hover {
+  color: white;
+  background-position: 0% 50%;
+  cursor: pointer;
+}
+
+.card-container .hov3:hover #audiovis {
+  height: 120px;
+  width: 120px;
+  -webkit-filter: brightness(180%);
+          filter: brightness(180%);
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+}
+
+.card-container .hov4:hover {
+  background-color: #489ffc;
+  color: #fdfcfc;
+}
+
+.card-container .hov4:hover button {
   width: 70%;
   height: 20px;
   margin: 2px;
@@ -102,13 +140,13 @@
   transition: 0.5s;
 }
 
-.card-container .hov3:hover button:hover {
+.card-container .hov4:hover button:hover {
   color: white;
   background-position: 0% 50%;
   cursor: pointer;
 }
 
-.card-container .hov3:hover #onlinewhite {
+.card-container .hov4:hover #onlinewhite {
   height: 100px;
   width: 200px;
   -webkit-filter: contrast(150%);
@@ -164,6 +202,18 @@
 }
 
 .card-container .card .image-box #lyricly {
+  position: relative;
+  top: 0px;
+  height: 140px;
+  width: 140px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.card-container .card .image-box #audiovis {
   position: relative;
   top: 0px;
   height: 140px;
