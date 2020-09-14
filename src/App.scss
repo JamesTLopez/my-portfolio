@@ -540,13 +540,26 @@ body,
                     }
                 }
             }
-            @media (max-width:1330px) {
+            @media only screen  and (max-width:1330px) {
                 .toolkit-content {
                     height: 100%;
                     min-height: 300px;
                     width: 100%;
                     position: relative;
-                    top:900px;
+                    top:600px;
+    
+                    
+                }
+                
+            }
+
+            @media only screen  and (max-width:630px) {
+                .toolkit-content {
+                    height: 100%;
+                    min-height: 300px;
+                    width: 100%;
+                    position: relative;
+                    top:1300px;
     
                     
                 }

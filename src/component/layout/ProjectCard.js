@@ -11,6 +11,7 @@ function ProjectCard({
   demo_example,
   description,
   tech,
+  isDemo
 }) {
   const [isModal, updateModal] = useState(false);
 
@@ -34,7 +35,7 @@ function ProjectCard({
             </section>
             <section>
               <a href={demo_url} alt="Not available" target="_blank" rel="noopener noreferrer">
-                <button className="but1">Demo</button>
+              <button className="but1">{!isDemo ? <strike><label>Demo</label></strike> : <label>Demo</label>}</button>
               </a>
             </section>
             <section>

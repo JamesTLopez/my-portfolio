@@ -1023,7 +1023,7 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards .car
   padding-bottom: 20px;
 }
 
-@media (max-width: 1330px) {
+@media only screen and (max-width: 1330px) {
   html .home-page .content .toolkit-content,
   body .home-page .content .toolkit-content,
   #root .home-page .content .toolkit-content,
@@ -1033,7 +1033,21 @@ body .home-page .content .toolkit-content .toolkit-container .toolkit-cards .car
     min-height: 300px;
     width: 100%;
     position: relative;
-    top: 900px;
+    top: 600px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  html .home-page .content .toolkit-content,
+  body .home-page .content .toolkit-content,
+  #root .home-page .content .toolkit-content,
+  .App .home-page .content .toolkit-content,
+  .home-page .home-page .content .toolkit-content {
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+    position: relative;
+    top: 1300px;
   }
 }
 /*# sourceMappingURL=App.css.map */

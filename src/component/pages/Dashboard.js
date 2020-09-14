@@ -26,7 +26,10 @@ import {
   GithubCat,
   Concurrent,
   Bootstrap,
-  AudioVis
+  AudioVis,
+  Oak,
+  Portfolio,
+  Banking
 } from "../../images/images";
 
 const Dashboard = () => {
@@ -103,6 +106,7 @@ const Dashboard = () => {
                 hov="hov1"
                 demo_url="https://jamestlopez.github.io/chord-finder/"
                 about_url=""
+                isDemo={true}
                 source_url="https://github.com/JamesTLopez/chord-finder"
                 demo_example="https://user-images.githubusercontent.com/44413841/88328694-d3767b80-ccf6-11ea-9d21-ee3c975893b9.gif"
                 description="A chord finding app that displays the type of chord played based on the notes pressed on the keyboard or tells the notes a chord is create from the selected chord buttons displayed at the bottom."
@@ -115,6 +119,7 @@ const Dashboard = () => {
                 hov="hov2"
                 demo_url="https://jamestlopez.github.io/easy-git/"
                 about_url=""
+                isDemo={true}
                 source_url="https://github.com/JamesTLopez/easy-git"
                 demo_example="https://user-images.githubusercontent.com/44413841/91918490-06664480-ec91-11ea-8a1f-5e983cb8aa2f.gif"
                 description="A simple react typescript app that searches and displays a users github repos and information."
@@ -125,8 +130,9 @@ const Dashboard = () => {
                 image={AudioVis}
                 id="audiovis"
                 hov="hov3"
-                demo_url="https://jamestlopez.github.io/easy-git/"
+                demo_url={''}
                 about_url=""
+                isDemo={false}
                 source_url="https://github.com/JamesTLopez/audio-visualizer"
                 demo_example="https://user-images.githubusercontent.com/44413841/93008254-a39e6400-f540-11ea-8af4-3781fc750691.gif"
                 description="An app that analyzes the frequency spectrum of a input audio media file and visualizes it using the animation library p5."
@@ -138,6 +144,7 @@ const Dashboard = () => {
                 id="onlinewhite"
                 hov="hov4"
                 demo_url={null}
+                isDemo={false}
                 about_url=""
                 source_url="https://github.com/JamesTLopez/Online-Whiteboard"
                 demo_example="https://user-images.githubusercontent.com/44413841/88430155-f58aff00-cdc5-11ea-8bbc-f92eb68d9067.gif"
@@ -160,11 +167,25 @@ const Dashboard = () => {
                   source_url="https://github.com/JamesTLopez/Concurrent-File-Editing"
                   demo_example="https://user-images.githubusercontent.com/44413841/88588057-ece43400-d024-11ea-99dc-896e9381ac99.gif"
                   description="A concurrent file editing app that allows users to save and access created documents. Users and simultaneously edit the document at the same time"
-                  tech={[HTML]}
+                  tech={[HTML,Node,CSS]}
                 />
                 <ToolkitCard
                   name="my-portfolio"
-                  image={Concurrent}
+                  image={Portfolio}
+                  source_url="https://github.com/JamesTLopez/my-portfolio"
+                  description="The repository for my portfolio website"
+                  tech={[HTML,Reacts,Sass,Javascript]}
+                />
+                <ToolkitCard
+                  name="me-banking"
+                  image={Banking}
+                  source_url="https://github.com/JamesTLopez/my-portfolio"
+                  description="A banking admin app that manages clients income. DATABASE EXPIRED"
+                  tech={[HTML,Reacts,Sass,Javascript]}
+                />
+                    <ToolkitCard
+                  name="Oak"
+                  image={Oak}
                   source_url="https://github.com/JamesTLopez/my-portfolio"
                   description="The repository for my portfolio website"
                   tech={[HTML,Reacts,Sass,Javascript]}
