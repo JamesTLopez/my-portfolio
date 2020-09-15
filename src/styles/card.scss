@@ -287,6 +287,7 @@
             background-color: #3a3e47;
             display: flex;
             flex-direction: column;
+            min-width: 690px;
 
 
             border: 1px solid rgb(90, 90, 90);
@@ -302,6 +303,7 @@
                 flex-direction: row;
                 align-items: center;
                 color:rgb(233, 233, 233);
+                min-width: 690px;
             
                 img{
                     display:flex;
