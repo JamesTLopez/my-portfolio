@@ -29,7 +29,7 @@ function ToolkitCard({
           <div className="content-container">
             <button onClick={showModal}>About</button>
 
-            <a href={source_url}>
+            <a href={source_url} target="_blank" rel="noopener noreferrer">
               <button>Source Code</button>
             </a>
           </div>

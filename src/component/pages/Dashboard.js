@@ -126,13 +126,13 @@ const Dashboard = () => {
                 tech={[HTML,Reacts,Type,Node,Sass]}
               />
               <ProjectCard
-                name="Audio Visulizer"
+                name="Audio-Visual"
                 image={AudioVis}
                 id="audiovis"
                 hov="hov3"
                 demo_url={null}
-                about_url=""
                 isDemo={false}
+                about_url=""
                 source_url="https://github.com/JamesTLopez/audio-visualizer"
                 demo_example="https://user-images.githubusercontent.com/44413841/93008254-a39e6400-f540-11ea-8af4-3781fc750691.gif"
                 description="An app that visualizes the frequency's emitted from a song. Uses P5 FFT algorithm to analyze bands of frequencies from a song and uses the specific frequency to create movement through the animation.
@@ -180,15 +180,15 @@ const Dashboard = () => {
                 <ToolkitCard
                   name="me-banking"
                   image={Banking}
-                  source_url="https://github.com/JamesTLopez/my-portfolio"
-                  description="A banking admin app that manages clients income. DATABASE EXPIRED"
-                  tech={[HTML,Reacts,Sass,Javascript]}
+                  source_url="https://github.com/JamesTLopez/me-banking"
+                  description="A banking admin app that manages clients income. Uses firebase for database. (DATABASE EXPIRED)"
+                  tech={[HTML,Reacts,Sass,Javascript,Node]}
                 />
-                    <ToolkitCard
+                  <ToolkitCard
                   name="Oak"
                   image={Oak}
-                  source_url="https://github.com/JamesTLopez/my-portfolio"
-                  description="The repository for my portfolio website"
+                  source_url="https://github.com/JamesTLopez/oak"
+                  description="The repository for my personal website for music"
                   tech={[HTML,Reacts,Sass,Javascript]}
                 />
               </div>
