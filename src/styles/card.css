@@ -1,8 +1,6 @@
 .card-container {
   position: relative;
   margin: 30px;
-  /* Modal Content */
-  /* The Close Button */
 }
 
 .card-container .hov1:hover {
@@ -344,7 +342,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px;
+  padding-top: 20%;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -356,12 +354,13 @@
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.027);
+  background-color: rgba(0, 0, 0, 0.315);
   /* Black w/ opacity */
 }
 
-.card-container .modal-content {
-  background-color: #515764;
+.card-container .modal .modal-content {
+  font-family: "Oswald", sans-serif;
+  background-color: #3a3e47;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,53 +368,85 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 1px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #888;
-  width: 50%;
-  height: 70%;
+  border: 1px solid #5a5a5a;
+  width: 60%;
+  height: 35%;
   border-radius: 10px;
   -webkit-box-shadow: 7px 10px 15px rgba(22, 22, 22, 0.671);
           box-shadow: 7px 10px 15px rgba(22, 22, 22, 0.671);
 }
 
-.card-container .modal-content .info-area {
+.card-container .modal .modal-content .info-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e9e9e9;
+}
+
+.card-container .modal .modal-content .info-area img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-top-left-radius: 10px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  width: 60%;
+  height: 100%;
+}
+
+.card-container .modal .modal-content .info-area img:before {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  opacity: 0.4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.card-container .modal .modal-content .info-area .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
+  height: 100%;
+  width: 40%;
 }
 
-.card-container .modal-content .info-area a {
-  height: 80%;
+.card-container .modal .modal-content .info-area .description h3 {
+  text-align: center;
 }
 
-.card-container .modal-content .info-area a img {
-  width: 100%;
-  height: 70%;
-}
-
-.card-container .modal-content .info-area img {
-  width: 80%;
-  height: 50%;
-}
-
-.card-container .modal-content .info-area .description {
-  width: 80%;
-}
-
-.card-container .modal-content .info-area .description .tech {
+.card-container .modal .modal-content .info-area .description .tech {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,23 +456,23 @@
   width: 80%;
 }
 
-.card-container .modal-content .info-area .description .tech img {
-  width: 50px;
-  height: 50px;
+.card-container .modal .modal-content .info-area .description .tech img {
+  width: 30px;
+  height: 30px;
 }
 
-.card-container .modal-content .info-area .description p {
+.card-container .modal .modal-content .info-area .description p {
   width: 80%;
 }
 
-.card-container .close {
+.card-container .modal .close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.card-container .close:hover, .card-container .close:focus {
+.card-container .modal .close:hover, .card-container .modal .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

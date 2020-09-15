@@ -523,6 +523,28 @@ body .home-page .title main .title-content .contact-content .contact-information
   width: 70%;
 }
 
+html .home-page .title main .title-content .contact-content .contact-information .information .text a,
+body .home-page .title main .title-content .contact-content .contact-information .information .text a,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text a,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text a,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text a {
+  text-decoration: none;
+}
+
+html .home-page .title main .title-content .contact-content .contact-information .information .text #Git,
+body .home-page .title main .title-content .contact-content .contact-information .information .text #Git,
+#root .home-page .title main .title-content .contact-content .contact-information .information .text #Git,
+.App .home-page .title main .title-content .contact-content .contact-information .information .text #Git,
+.home-page .home-page .title main .title-content .contact-content .contact-information .information .text #Git {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
 html .home-page .title main .title-content .contact-content .contact-information .information .text #Resume,
 body .home-page .title main .title-content .contact-content .contact-information .information .text #Resume,
 #root .home-page .title main .title-content .contact-content .contact-information .information .text #Resume,
@@ -541,7 +563,7 @@ body .home-page .title main .title-content .contact-content .contact-information
 #root .home-page .title main .title-content .contact-content .contact-information .information .text button,
 .App .home-page .title main .title-content .contact-content .contact-information .information .text button,
 .home-page .home-page .title main .title-content .contact-content .contact-information .information .text button {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

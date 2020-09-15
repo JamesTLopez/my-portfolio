@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
@@ -11,558 +11,546 @@ body,
 #root,
 .App,
 .home-page {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: none;
 
-    p {
-        padding: 0;
-        margin: 0;
-    }
+  p {
+    padding: 0;
+    margin: 0;
+  }
 
-    .home-page {
-        display: flex;
-        flex-direction: column;
-        height: inherit;
-        border: solid 1px;
-        background-color: #2d323d;
-        position: absolute;
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    border: solid 1px;
+    background-color: #2d323d;
+    position: absolute;
 
-        .title {
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url("./images/image/titl.jpg");
+      filter: contrast(120%) sepia(10%);
+      background-size: inherit;
+      background-repeat: inherit;
+      background-position: center;
+      width: 100%;
+      min-height: 65%;
+      main {
+        font-family: "Oswald", sans-serif;
+        position: relative;
+        top: -8%;
+        height: 100%;
+        width: 80%;
+        .title-content {
+          display: flex;
+
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          .home-content {
             display: flex;
+            position: relative;
             flex-direction: column;
             align-items: center;
-            background-image: url("./images/image/titl.jpg");
-            filter: contrast(120%) sepia(10%);
-            background-size: inherit;
-            background-repeat: inherit;
-            background-position: center;
+            justify-content: center;
             width: 100%;
-            min-height: 65%;
-            main {
-                font-family: "Oswald", sans-serif;
-                position: relative;
-                top: -8%;
-                height: 100%;
-                width: 80%;
-                .title-content {
-                    display: flex;
-
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    .home-content {
-                        display: flex;
-                        position: relative;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        height: 100%;
-                        animation-name: slideIn;
-                        animation-duration: 0.3s;
-                        @keyframes slideIn {
-                            0% {
-                                left: 250px;
-                                opacity: 0.1;
-                            }
-                            25% {
-                                left: 150px;
-                                opacity: 0.25;
-                            }
-                            50% {
-                                left: 50px;
-                                opacity: 0.5;
-                            }
-                            50% {
-                                left: 25px;
-                                opacity: 0.75;
-                            }
-                            100% {
-                                left: 0px;
-                                opacity: 1;
-                            }
-                        }
-                        .portolio-title {
-                            p {
-                                color: white;
-                                #position {
-                                    font-size: 40px;
-                                    color: white;
-                                }
-                                #location {
-                                    opacity: 0.6;
-                                }
-                            }
-                        }
-                        .Links {
-                            display: flex;
-                            flex-direction: column;
-                            flex-wrap: wrap;
-                            justify-content: center;
-                            align-items: center;
-                            position: relative;
-                            top: 30px;
-                            width: 20%;
-                            height: 50px;
-
-                            .images {
-                                height: 100px;
-
-                                img {
-                                    padding: 5px;
-                                    height: 30px;
-                                    width: 30px;
-                                    transition: all 0.2s;
-                                    &:hover {
-                                        height: 35px;
-                                        width: 35px;
-
-                                        cursor: pointer;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .about-content {
-                        display: flex;
-                        position: relative;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: center;
-                        width: 70%;
-                        height: 100%;
-                        color: #b6b4b4;
-                        animation-name: slideIn;
-                        animation-duration: 0.3s;
-                        @keyframes slideIn {
-                            0% {
-                                left: 250px;
-                                opacity: 0.1;
-                            }
-                            25% {
-                                left: 150px;
-                                opacity: 0.25;
-                            }
-                            50% {
-                                left: 50px;
-                                opacity: 0.5;
-                            }
-                            50% {
-                                left: 25px;
-                                opacity: 0.75;
-                            }
-                            100% {
-                                left: 0px;
-                                opacity: 1;
-                            }
-                        }
-                        .picture {
-                            position: relative;
-                            height: 200px;
-                            width: 200px;
-                            img {
-                                height: 200px;
-                                width: 200px;
-                            }
-                            @media only screen  and (max-width:900px) {
-                               img{
-                                   display: none;
-                               }
-                                
-                            }
-                        }
-
-                        p {
-                            a {
-                                text-decoration: none;
-                                font-weight: bold;
-                                color: #e0e0e0;
-                                text-transform: uppercase;
-                                transition: ease-in 0.3s;
-                                &:hover {
-                                    filter: brightness(150%) contrast(140%);
-                                }
-                            }
-                        }
-                    }
-                    .contact-content {
-                        display: flex;
-                        position: relative;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        width: 70%;
-                        height: 100%;
-                        color: #b6b4b4;
-                        animation-name: slideLeft;
-                        animation-duration: 0.2s;
-                        @keyframes slideLeft {
-                            0% {
-                                right: 250px;
-                                opacity: 0.1;
-                            }
-                            25% {
-                                right: 150px;
-                                opacity: 0.25;
-                            }
-                            50% {
-                                right: 50px;
-                                opacity: 0.5;
-                            }
-                            50% {
-                                right: 25px;
-                                opacity: 0.75;
-                            }
-                            100% {
-                                right: 0px;
-                                opacity: 1;
-                            }
-                        }
-                        .contact-title {
-                        }
-                        .contact-information {
-                            position: relative;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: flex-start;
-                            // align-items: center;
-                            width: 80%;
-
-                            .information {
-                                display: flex;
-
-                                .images {
-                                    flex: 1;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    padding: 5px;
-                                    height: 80px;
-                                    width: 90px;
-
-                                    img {
-                                        padding: 5px;
-                                        height: 40px;
-                                        width: 40px;
-                                        transition: all 0.2s;
-                                        &:hover {
-                                            height: 45px;
-                                            width: 45px;
-
-                                            cursor: pointer;
-                                        }
-                                    }
-                                }
-                                .text {
-                                    flex: 2;
-                                    display: flex;
-                                    justify-content: flex-start;
-                                    align-items: center;
-                                    padding: 5px;
-                                    height: 80px;
-                                    width: 70%;
-                                    
-                                    
-                                    #Resume{
-                                        display: flex;
-                                        justify-content: center;
-                                        
-                                        
-                                    }
-
-                                  
-                                    button{
-                                        font-family: 'Oswald', sans-serif;
-                                        display: flex;
-                                        justify-content: flex-start;
-                                        align-items: center;
-                                        height: 30px;
-                                        width: 280px;
-                                        font-size: 17px;
-                                  
-                                        border-style:solid 10px;
-                                        border-radius:5px;
-                                        border-color:rgb(173, 173, 173);
-                                        color:white;
-                                        background:rgba(219, 219, 219, 0.61);
-                                        text-decoration: none;
-                                        transition: all 0.5s;
-                                     
-                                        img{
-                                            position: relative;
-                                            top:1px;
-                                            height: 10px;
-                                            right: 10px;
-                                            width: 10px;
-                                            margin-left:20px;
-                                          
-                                        }
-                                        #copy{
-                                            position: relative;
-                                            left:5px;
-                                            height: 15px;
-                                            width: 15px;
-                                            justify-self: end;
-                                        }
-                                        span{
-                                            position: relative;
-                                            left:2px;
-                                        }
-                                        &:hover{
-                                            background-color: rgb(147, 185, 72);
-                                            border-color:rgb(127, 182, 18);
-                                        }
-                                    }
-                                    .notify {
-                                        position: relative;
-                                        left:20px;
-                                        #noti {
-                                            position: relative;
-                                            color: yellowgreen;
-                                            font-size:20px;
-                                            animation-name: fade;
-                                            animation-duration: 3s;
-                                            @keyframes fade {
-                                                0% {
-                                                    opacity: 0.1;
-                                                    left: -30px;
-                                                }
-                                                25% {
-                                                    opacity: 1;
-                                                    left: 0px;
-                                                }
-                                                70% {
-                                                    opacity: 1;
-                                                    left: 0px;
-                                                }
-                                                90% {
-                                                    opacity: 1;
-                                                    left: 0px;
-                                                }
-                                                100% {
-                                                    opacity: 0;
-                                                    left: -20px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            height: 100%;
+            animation-name: slideIn;
+            animation-duration: 0.3s;
+            @keyframes slideIn {
+              0% {
+                left: 250px;
+                opacity: 0.1;
+              }
+              25% {
+                left: 150px;
+                opacity: 0.25;
+              }
+              50% {
+                left: 50px;
+                opacity: 0.5;
+              }
+              50% {
+                left: 25px;
+                opacity: 0.75;
+              }
+              100% {
+                left: 0px;
+                opacity: 1;
+              }
             }
-        }
+            .portolio-title {
+              p {
+                color: white;
+                #position {
+                  font-size: 40px;
+                  color: white;
+                }
+                #location {
+                  opacity: 0.6;
+                }
+              }
+            }
+            .Links {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              top: 30px;
+              width: 20%;
+              height: 50px;
 
-        .content {
-            flex: 1;
+              .images {
+                height: 100px;
+
+                img {
+                  padding: 5px;
+                  height: 30px;
+                  width: 30px;
+                  transition: all 0.2s;
+                  &:hover {
+                    height: 35px;
+                    width: 35px;
+
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+
+          .about-content {
             display: flex;
-            flex-direction: column;
             position: relative;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 100%;
+            color: #b6b4b4;
+            animation-name: slideIn;
+            animation-duration: 0.3s;
+            @keyframes slideIn {
+              0% {
+                left: 250px;
+                opacity: 0.1;
+              }
+              25% {
+                left: 150px;
+                opacity: 0.25;
+              }
+              50% {
+                left: 50px;
+                opacity: 0.5;
+              }
+              50% {
+                left: 25px;
+                opacity: 0.75;
+              }
+              100% {
+                left: 0px;
+                opacity: 1;
+              }
+            }
+            .picture {
+              position: relative;
+              height: 200px;
+              width: 200px;
+              img {
+                height: 200px;
+                width: 200px;
+              }
+              @media only screen and (max-width: 900px) {
+                img {
+                  display: none;
+                }
+              }
+            }
 
-            .project-content {
+            p {
+              a {
+                text-decoration: none;
+                font-weight: bold;
+                color: #e0e0e0;
+                text-transform: uppercase;
+                transition: ease-in 0.3s;
+                &:hover {
+                  filter: brightness(150%) contrast(140%);
+                }
+              }
+            }
+          }
+          .contact-content {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 100%;
+            color: #b6b4b4;
+            animation-name: slideLeft;
+            animation-duration: 0.2s;
+            @keyframes slideLeft {
+              0% {
+                right: 250px;
+                opacity: 0.1;
+              }
+              25% {
+                right: 150px;
+                opacity: 0.25;
+              }
+              50% {
+                right: 50px;
+                opacity: 0.5;
+              }
+              50% {
+                right: 25px;
+                opacity: 0.75;
+              }
+              100% {
+                right: 0px;
+                opacity: 1;
+              }
+            }
+            .contact-title {
+            }
+            .contact-information {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              // align-items: center;
+              width: 80%;
+
+              .information {
                 display: flex;
-                height: 700px;
-                flex-direction: column;
-                width: 100%;
 
-                .project-header {
+                .images {
+                  flex: 1;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 5px;
+                  height: 80px;
+                  width: 90px;
+
+                  img {
+                    padding: 5px;
+                    height: 40px;
+                    width: 40px;
+                    transition: all 0.2s;
+                    &:hover {
+                      height: 45px;
+                      width: 45px;
+
+                      cursor: pointer;
+                    }
+                  }
+                }
+                .text {
+                  flex: 2;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  padding: 5px;
+                  height: 80px;
+                  width: 70%;
+
+                  a {
+                    text-decoration: none;
+                  }
+
+                  #Git {
                     display: flex;
-                    flex-direction: row;
                     justify-content: center;
-                    align-items: center;
-                    height: 70px;
-                    width: 100%;
-                    margin-bottom: 50px;
-                    background-color: #2d313a;
-                    box-shadow: 0px 10px 99px #121418;
-                   
-                    .images {
-                        display: flex;
-                        position: relative;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 5px;
-                        height: 150px;
-                        width: 90px;
-                        transition: 0.6 all;
-                        
-                      
-                        img {
-                            height: 50px;
-                            width: 50px;
-                            padding:20px;
-                            transition: 0.2s all;
-                            &:hover {
-                                height: 55px;
-                                width: 55px;
-                                filter: brightness(120%) contrast(120%);
-                            }
-                        }
-
-                        #javascript {
-                            position: relative;
-                            top: 3px;
-                            height: 46px;
-                            width: 45px;
-                            transition: 0.2s all;
-                            &:hover {
-                                height: 50px;
-                                width: 50px;
-                            }
-                       
-                        }
-
-                        #tooltip{
-                            font-family: "Oswald", sans-serif;
-                            opacity: 0;
-                            position: absolute;
-                            bottom: 10px;
-                            width: 90px;
-                            background-color: #1e2229;
-                            font-size: 15px;
-                            color: #fff;
-                            text-align: center;
-                            border-radius: 6px;
-                            padding: 5px 0;
-                            transition: all 0.3s;
-                            
-                        }
-                        &:hover{
-                            #tooltip{
-                                opacity: 1;
-                               
-                            }
-                        }
-                       
-                        
-                    }
-                }
-                @media (max-width:930px) {
-                    .project-header{
-                        display: none;;
-                    }
-                       
-                   }
-                .latest-works {
-                    position: relative;
-                    top: 50px;
-                    .latest-works-title {
-                        font-family: "Oswald", sans-serif;
-                        text-align: center;
-                        #chapter {
-                            color: #eeeded;
-                            font-size: $section-h1;
-                        }
-                        #chapter-content {
-                            color: #eeeded;
-                            opacity: 0.7;
-                            font-size: $section-h2;
-                        }
-                    }
-
-                    .latest-works-content {
-                        display: flex;
-                        position: relative;
-                        justify-content: center;
-                        align-content: flex-start;
-                        flex-wrap: wrap;
-                        margin: 10px;
-                        width: 100%;
-                        height: 400px;
-                        max-height: 400px;
-                    }
-                }
-            }
-
-            .toolkit-content {
-                height: 100%;
-                min-height: 300px;
-                width: 100%;
-                position: relative;
-                top:200px;
-
-                .toolkit-container {
-                    position: relative;
-                
-                    width: 100%;
+                    text-decoration: none;
+                  }
+                  #Resume {
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
-                    align-items: center;
-                    .toolkit-title {
-                        font-family: "Oswald", sans-serif;
-                        text-align: center;
-                        #chapter {
-                            color: #eeeded;
-                            font-size: $section-h1;
-                        }
-                        #chapter-content {
-                            color: #eeeded;
-                            opacity: 0.7;
-                            font-size: $section-h2;
-                        }
-                    }
-                    .toolkit-cards {
-                        position: relative;
-                        display: flex;
-                        margin-top: 50px;
-                        min-height: 210px;
-                        justify-content: center;
-                        width: 70%;
-                        // min-width: 65%;
-                        max-width: 900px;
-                        border-radius: 2px;
-                        background-color: #2d323d;
-                        box-shadow: -2px 3px 5px #2c2c2c;
-                        transition: ease 0.2s;
-                        &:hover {
-                            background-color: #2f3541;
-                        }
-                        .card-container{
-                            display: flex;
-                            justify-content: center;
-                            flex-wrap: wrap;
-                            border-radius: 1px;
-                            padding-top:20px;
-                            padding-bottom:20px;
-              
-                          
-                        }
-                    }
-                }
-            }
-            @media only screen  and (max-width:1330px) {
-                .toolkit-content {
-                    height: 100%;
-                    min-height: 300px;
-                    width: 100%;
-                    position: relative;
-                    top:600px;
-    
-                    
-                }
-                
-            }
+                  }
 
-            @media only screen  and (max-width:630px) {
-                .toolkit-content {
-                    height: 100%;
-                    min-height: 300px;
-                    width: 100%;
+                  button {
+                    font-family: "Oswald", sans-serif;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 30px;
+                    width: 280px;
+                    font-size: 17px;
+
+                    border-style: solid 10px;
+                    border-radius: 5px;
+                    border-color: rgb(173, 173, 173);
+                    color: white;
+                    background: rgba(219, 219, 219, 0.61);
+                    text-decoration: none;
+                    transition: all 0.5s;
+
+                    img {
+                      position: relative;
+                      top: 1px;
+                      height: 10px;
+                      right: 10px;
+                      width: 10px;
+                      margin-left: 20px;
+                    }
+                    #copy {
+                      position: relative;
+                      left: 5px;
+                      height: 15px;
+                      width: 15px;
+                      justify-self: end;
+                    }
+                    span {
+                      position: relative;
+                      left: 2px;
+                    }
+                    &:hover {
+                      background-color: rgb(147, 185, 72);
+                      border-color: rgb(127, 182, 18);
+                    }
+                  }
+                  .notify {
                     position: relative;
-                    top:1300px;
-    
-                    
+                    left: 20px;
+                    #noti {
+                      position: relative;
+                      color: yellowgreen;
+                      font-size: 20px;
+                      animation-name: fade;
+                      animation-duration: 3s;
+                      @keyframes fade {
+                        0% {
+                          opacity: 0.1;
+                          left: -30px;
+                        }
+                        25% {
+                          opacity: 1;
+                          left: 0px;
+                        }
+                        70% {
+                          opacity: 1;
+                          left: 0px;
+                        }
+                        90% {
+                          opacity: 1;
+                          left: 0px;
+                        }
+                        100% {
+                          opacity: 0;
+                          left: -20px;
+                        }
+                      }
+                    }
+                  }
                 }
-                
+              }
             }
+          }
         }
+      }
     }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .project-content {
+        display: flex;
+        height: 700px;
+        flex-direction: column;
+        width: 100%;
+
+        .project-header {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          height: 70px;
+          width: 100%;
+          margin-bottom: 50px;
+          background-color: #2d313a;
+          box-shadow: 0px 10px 99px #121418;
+
+          .images {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            height: 150px;
+            width: 90px;
+            transition: 0.6 all;
+
+            img {
+              height: 50px;
+              width: 50px;
+              padding: 20px;
+              transition: 0.2s all;
+              &:hover {
+                height: 55px;
+                width: 55px;
+                filter: brightness(120%) contrast(120%);
+              }
+            }
+
+            #javascript {
+              position: relative;
+              top: 3px;
+              height: 46px;
+              width: 45px;
+              transition: 0.2s all;
+              &:hover {
+                height: 50px;
+                width: 50px;
+              }
+            }
+
+            #tooltip {
+              font-family: "Oswald", sans-serif;
+              opacity: 0;
+              position: absolute;
+              bottom: 10px;
+              width: 90px;
+              background-color: #1e2229;
+              font-size: 15px;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              padding: 5px 0;
+              transition: all 0.3s;
+            }
+            &:hover {
+              #tooltip {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        @media (max-width: 930px) {
+          .project-header {
+            display: none;
+          }
+        }
+        .latest-works {
+          position: relative;
+          top: 50px;
+          .latest-works-title {
+            font-family: "Oswald", sans-serif;
+            text-align: center;
+            #chapter {
+              color: #eeeded;
+              font-size: $section-h1;
+            }
+            #chapter-content {
+              color: #eeeded;
+              opacity: 0.7;
+              font-size: $section-h2;
+            }
+          }
+
+          .latest-works-content {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            margin: 10px;
+            width: 100%;
+            height: 400px;
+            max-height: 400px;
+          }
+        }
+      }
+
+      .toolkit-content {
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        position: relative;
+        top: 200px;
+
+        .toolkit-container {
+          position: relative;
+
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .toolkit-title {
+            font-family: "Oswald", sans-serif;
+            text-align: center;
+            #chapter {
+              color: #eeeded;
+              font-size: $section-h1;
+            }
+            #chapter-content {
+              color: #eeeded;
+              opacity: 0.7;
+              font-size: $section-h2;
+            }
+          }
+          .toolkit-cards {
+            position: relative;
+            display: flex;
+            margin-top: 50px;
+            min-height: 210px;
+            justify-content: center;
+            width: 70%;
+            // min-width: 65%;
+            max-width: 900px;
+            border-radius: 2px;
+            background-color: #2d323d;
+            box-shadow: -2px 3px 5px #2c2c2c;
+            transition: ease 0.2s;
+            &:hover {
+              background-color: #2f3541;
+            }
+            .card-container {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              border-radius: 1px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 1330px) {
+        .toolkit-content {
+          height: 100%;
+          min-height: 300px;
+          width: 100%;
+          position: relative;
+          top: 600px;
+        }
+      }
+
+      @media only screen and (max-width: 630px) {
+        .toolkit-content {
+          height: 100%;
+          min-height: 300px;
+          width: 100%;
+          position: relative;
+          top: 1300px;
+        }
+      }
+    }
+  }
 }

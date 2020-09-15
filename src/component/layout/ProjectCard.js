@@ -50,17 +50,12 @@ function ProjectCard({
       {isModal ? (
         <div id="myModal" className="modal" onClick={showModal}>
           <div className="modal-content">
-            <div className="exit">
-              <span onClick={showModal} className="close">
-                &times;
-              </span>
-            </div>
             <div className="info-area">
-              <h1>Demo</h1>
               <img src={demo_example} alt="Demo not found"></img>
               <div className="description">
                 <h3>About</h3>
-                {description}
+                <p>{description}</p>
+                
                 <h3>Technologies</h3>
                 <div className="tech">
                   {tech.map((item) => (

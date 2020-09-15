@@ -4,15 +4,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import PDF from "../../images/JamesTheoLopezCV.pdf";
 
 function Contact() {
-  let [isGitCopied, setGitCopied] = useState(false);
   let [isEmailCopied, setEmailCopied] = useState(false);
-
-  let onGitCopy = () => {
-    setGitCopied(true);
-    setTimeout(function () {
-      setGitCopied(false);
-    }, 3000);
-  };
 
   let onEmailCopy = () => {
     setEmailCopied(true);
@@ -42,19 +34,15 @@ function Contact() {
               </a>
             </div>
             <div className="text">
-              <CopyToClipboard
-                onCopy={onGitCopy}
-                text="https://github.com/JamesTLopez"
+              <a
+                href="https://github.com/JamesTLopez/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <button onClick={onClick()}>
-                  <img src={Arrow} alt="Arrow"></img>
+                <button id="Git"onClick={onClick()}>
                   <span>www.github.com/JamesTLopez</span>
-                  <img id="copy" src={Copy} alt="copy"></img>
                 </button>
-              </CopyToClipboard>
-              <div className="notify">
-                {isGitCopied ? <span id="noti">Copied.</span> : null}
-              </div>
+              </a>
             </div>
           </div>
           <div className="information">

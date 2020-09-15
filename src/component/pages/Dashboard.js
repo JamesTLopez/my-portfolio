@@ -136,7 +136,7 @@ const Dashboard = () => {
                 source_url="https://github.com/JamesTLopez/audio-visualizer"
                 demo_example="https://user-images.githubusercontent.com/44413841/93008254-a39e6400-f540-11ea-8af4-3781fc750691.gif"
                 description="An app that visualizes the frequency's emitted from a song. Uses P5 FFT algorithm to analyze bands of frequencies from a song and uses the specific frequency to create movement through the animation.
-                Visualized using the P5 javascript library."
+               "
                 tech={[HTML,Reacts,Type,Sass]}
               />
               <ProjectCard
