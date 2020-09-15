@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2bef1b71.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.80950e73.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.80950e73.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.a0516676.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.ecbd5de9.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.ecbd5de9.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.8b00eace.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8b00eace.js.map",
-    "static/js/2.03afe4c5.chunk.js": "/my-portfolio/static/js/2.03afe4c5.chunk.js",
-    "static/js/2.03afe4c5.chunk.js.map": "/my-portfolio/static/js/2.03afe4c5.chunk.js.map",
+    "static/js/2.1d8541e3.chunk.js": "/my-portfolio/static/js/2.1d8541e3.chunk.js",
+    "static/js/2.1d8541e3.chunk.js.map": "/my-portfolio/static/js/2.1d8541e3.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.a95e1230dde7f7c73d473d0b3b1cd6ac.js": "/my-portfolio/precache-manifest.a95e1230dde7f7c73d473d0b3b1cd6ac.js",
+    "precache-manifest.f1924bda5f1d5abf5d32d1290e7ceb7a.js": "/my-portfolio/precache-manifest.f1924bda5f1d5abf5d32d1290e7ceb7a.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.2bef1b71.chunk.css.map": "/my-portfolio/static/css/main.2bef1b71.chunk.css.map",
-    "static/js/2.03afe4c5.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.03afe4c5.chunk.js.LICENSE.txt",
+    "static/css/main.a0516676.chunk.css.map": "/my-portfolio/static/css/main.a0516676.chunk.css.map",
+    "static/js/2.1d8541e3.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.1d8541e3.chunk.js.LICENSE.txt",
     "static/media/Gitcat.png": "/my-portfolio/static/media/Gitcat.9a4c12cd.png",
+    "static/media/JamesTheoLopezCV.pdf": "/my-portfolio/static/media/JamesTheoLopezCV.45319fa7.pdf",
     "static/media/affinitydesigner.png": "/my-portfolio/static/media/affinitydesigner.811ed1bd.png",
     "static/media/affinityphoto.png": "/my-portfolio/static/media/affinityphoto.a86ff765.png",
     "static/media/audiovis.png": "/my-portfolio/static/media/audiovis.0a6acfa3.png",
@@ -40,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8b00eace.js",
-    "static/js/2.03afe4c5.chunk.js",
-    "static/css/main.2bef1b71.chunk.css",
-    "static/js/main.80950e73.chunk.js"
+    "static/js/2.1d8541e3.chunk.js",
+    "static/css/main.a0516676.chunk.css",
+    "static/js/main.ecbd5de9.chunk.js"
   ]
 }
