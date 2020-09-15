@@ -19,9 +19,7 @@ function Contact() {
   return (
     <div className="title-content">
       <div className="contact-content">
-        <div className="contact-title">
-          <h2>Contact Information</h2>
-        </div>
+  
         <div className="contact-information">
           <div className="information">
             <div className="images">

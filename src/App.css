@@ -332,6 +332,14 @@ body .home-page .title main .title-content .about-content .picture img,
   }
 }
 
+html .home-page .title main .title-content .about-content p,
+body .home-page .title main .title-content .about-content p,
+#root .home-page .title main .title-content .about-content p,
+.App .home-page .title main .title-content .about-content p,
+.home-page .home-page .title main .title-content .about-content p {
+  font-size: 1.5vh;
+}
+
 html .home-page .title main .title-content .about-content p a,
 body .home-page .title main .title-content .about-content p a,
 #root .home-page .title main .title-content .about-content p a,
@@ -441,9 +449,9 @@ body .home-page .title main .title-content .contact-content .contact-information
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
 }
 
