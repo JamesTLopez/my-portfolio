@@ -54,7 +54,7 @@ const Dashboard = () => {
           <div className="project-header">
             <div className="images">
               <img id="sass" src={Sass} alt="Sass"></img>
-              <p id="tooltip">Sass</p>
+              <p id="tooltip">Sasss</p>
             </div>
             <div className="images">
               <img id="css" src={CSS} alt="CSS"></img>
