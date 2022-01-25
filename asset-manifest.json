@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.adc39fc9.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.c4e30977.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.c4e30977.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.bf8b1ae0.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.e439c0a8.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.e439c0a8.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.8b00eace.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8b00eace.js.map",
     "static/js/2.65fac102.chunk.js": "/my-portfolio/static/js/2.65fac102.chunk.js",
     "static/js/2.65fac102.chunk.js.map": "/my-portfolio/static/js/2.65fac102.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.8213ccecb98d02803227d94e64ef56a4.js": "/my-portfolio/precache-manifest.8213ccecb98d02803227d94e64ef56a4.js",
+    "precache-manifest.43e9f0427ef22a985bc4f91870e497ac.js": "/my-portfolio/precache-manifest.43e9f0427ef22a985bc4f91870e497ac.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.adc39fc9.chunk.css.map": "/my-portfolio/static/css/main.adc39fc9.chunk.css.map",
+    "static/css/main.bf8b1ae0.chunk.css.map": "/my-portfolio/static/css/main.bf8b1ae0.chunk.css.map",
     "static/js/2.65fac102.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.65fac102.chunk.js.LICENSE.txt",
     "static/media/Gitcat.png": "/my-portfolio/static/media/Gitcat.9a4c12cd.png",
-    "static/media/JamesTheoLopezCV.pdf": "/my-portfolio/static/media/JamesTheoLopezCV.45319fa7.pdf",
+    "static/media/JamesTheoLopezCV.pdf": "/my-portfolio/static/media/JamesTheoLopezCV.7aea0caa.pdf",
     "static/media/affinitydesigner.png": "/my-portfolio/static/media/affinitydesigner.811ed1bd.png",
     "static/media/affinityphoto.png": "/my-portfolio/static/media/affinityphoto.a86ff765.png",
     "static/media/audiovis.png": "/my-portfolio/static/media/audiovis.0a6acfa3.png",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.8b00eace.js",
     "static/js/2.65fac102.chunk.js",
-    "static/css/main.adc39fc9.chunk.css",
-    "static/js/main.c4e30977.chunk.js"
+    "static/css/main.bf8b1ae0.chunk.css",
+    "static/js/main.e439c0a8.chunk.js"
   ]
 }
